@@ -153,10 +153,13 @@ html.dark-mode {
 
     .iframe-loader {
         background-color: fadeout(@color-dark-background, 10%);
+	/* less: rgba(33, 41, 44, 0.9); */
 
         .spinner-border {
             color: darken(@color-dark-font, 25%);
+	    /* less: #7d989c */
             border-color: currentColor darken(@color-dark-font, 50%) currentColor currentColor;
+	    /* less: #425457 */
         }
     }
 
@@ -242,6 +245,7 @@ html.dark-mode {
 
     .menu.toolbar .dropbutton a.dropdown:hover {
         background-color: lighten(@color-dark-list-selected-background, 5%);
+	/* less: #425358 */
     }
 
     // ---------------------------------
@@ -390,6 +394,7 @@ html.dark-mode {
 
         &:hover:not(:disabled) {
             background-color: lighten(@color-dark-btn-primary-background, 5%);
+	    /* less: #007bb7 */
         }
     }
 
@@ -399,6 +404,7 @@ html.dark-mode {
 
         &:hover:not(:disabled) {
             background-color: lighten(@color-dark-btn-secondary-background, 5%);
+	    /* less: #586e75 */
         }
     }
 
@@ -408,6 +414,7 @@ html.dark-mode {
 
         &:hover:not(:disabled) {
             background-color: lighten(@color-dark-btn-danger-background, 5%);
+	    /* less: #ac3937 */
         }
     }
 
@@ -544,6 +551,7 @@ html.dark-mode {
 
         a.button {
             background-color: fadeout(@color-dark-background, 75%);
+	    /* less: #21292c */
         }
     }
 
@@ -569,6 +577,7 @@ html.dark-mode {
 
     .CodeMirror-gutters {
         background-color: darken(@color-dark-list-selected-background, 10%);
+	/* less: #212a2c */
         border: 0;
     }
 
@@ -654,6 +663,7 @@ html.dark-mode {
             &:focus:not(:disabled),
             &.tox-button--icon:hover:not(:disabled) {
                 color: lighten(@color-dark-font, 5%);
+		/* less: #b7c5c8 */
                 background-color: @color-dark-input-addon-background-focus;
                 border-color: transparent;
             }
@@ -725,6 +735,7 @@ html.dark-mode {
 
             &:hover:not(:disabled) {
                 background-color: lighten(@color-dark-btn-primary-background, 5%);
+		/* less: #007bb7 */
             }
 
             &.tox-button--secondary {
@@ -737,7 +748,8 @@ html.dark-mode {
 
                 &:hover:not(:disabled) {
                     background-color: lighten(@color-dark-btn-secondary-background, 5%);
-                }
+                	/* less: #586e75 */
+		}
 
             }
         }
@@ -942,6 +954,7 @@ html.dark-mode {
 
         .ui-datepicker-days-cell-over a {
             background-color: lighten(@color-dark-list-selected-background, 10%);
+	    /* less: #4d6066 */
         }
     }
 
@@ -990,6 +1003,7 @@ html.dark-mode {
         .menu li.separator {
             background-color: transparent;
             color: darken(@color-dark-font, 20%);
+	    /* less: #8ba3a7 */
         }
 
         .menu ul + li.separator {

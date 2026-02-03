@@ -75,17 +75,23 @@
 
         &:focus {
             box-shadow: 0 0 0 .2rem fade(@color-btn-primary-background, 50%);
+	    /* less: rgba(55, 190, 255, 0.50) */
         }
 
         &:hover {
             background: darken(@color-btn-primary-background, 8%);
+	    /* less: #0eb1ff */
             border-color: darken(@color-btn-primary-background, 10%);
+	    /* less: #04adff */
         }
 
         &:not([disabled]):not(.disabled):active {
             background: darken(@color-btn-primary-background, 11%);
+	    /* less: #00abfe */
             border-color: darken(@color-btn-primary-background, 13%);
+	    /* less: #00a4f4 */
             box-shadow: 0 0 0 .2rem fade(@color-btn-primary-background, 53%);
+	    /* less: rgba(55, 190, 255, 0.53) */
         }
     }
 }
