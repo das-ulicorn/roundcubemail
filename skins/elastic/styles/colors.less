@@ -338,3 +338,271 @@
 @color-dark-blockquote-0-border:        @color-dark-blockquote-0;
 @color-dark-blockquote-1-border:        @color-dark-blockquote-1;
 @color-dark-blockquote-2-border:        @color-dark-blockquote-2;
+
+// Defining CSS varables from the less variables above
+:root {
+    --rc-color-main: @color-main;
+    --rc-color-main-dark: @color-main-dark;
+    --rc-color-black: @color-black;
+    --rc-color-font: @color-font;
+    --rc-color-link: @color-link;
+    --rc-color-link-hover: @color-link-hover;
+    --rc-color-border: @color-border;
+    --rc-color-error: @color-error;
+    --rc-color-success: @color-success;
+    --rc-color-warning: @color-warning;
+
+    --rc-color-black-shade-text: @color-black-shade-text;
+    --rc-color-black-shade-border: @color-black-shade-border;
+    --rc-color-black-shade-bg: @color-black-shade-bg;
+
+
+    // Layout elements
+    --rc-color-layout-border: @color-layout-border;
+    --rc-color-layout-header: @color-layout-header;
+    --rc-color-layout-sidebar-background: @color-layout-sidebar-background;
+    --rc-color-layout-list-background: @color-layout-list-background;
+    --rc-color-layout-content-background: @color-layout-content-background;
+    --rc-color-layout-header-background: @color-layout-header-background;
+    --rc-color-layout-footer-background: @color-layout-footer-background;
+
+    --rc-color-layout-mobile-header-background: @color-layout-mobile-header-background;
+    --rc-color-layout-mobile-footer-background: @color-layout-mobile-footer-background;
+
+    // Task menu
+    --rc-color-taskmenu-background: @color-taskmenu-background;
+    --rc-color-taskmenu-button: @color-taskmenu-button;
+    --rc-color-taskmenu-button-selected: @color-taskmenu-button-selected;
+    --rc-color-taskmenu-button-action: @color-taskmenu-button-action;
+
+    --rc-color-taskmenu-button-selected-background: @color-taskmenu-button-selected-background;
+    --rc-color-taskmenu-button-action-background: @color-taskmenu-button-action-background;
+
+    --rc-color-taskmenu-button-hover: @color-taskmenu-button-hover;
+    --rc-color-taskmenu-button-selected-hover: @color-taskmenu-button-selected-hover;
+    --rc-color-taskmenu-button-action-hover: @color-taskmenu-button-action-hover;
+
+    --rc-color-taskmenu-button-background-hover: @color-taskmenu-button-background-hover;
+    --rc-color-taskmenu-button-action-background-hover: @color-taskmenu-button-action-background-hover;
+    --rc-color-taskmenu-button-logout: @color-taskmenu-button-logout;
+    --rc-color-taskmenu-button-logout-hover: @color-taskmenu-button-logout-hover;
+
+
+    // Toolbar
+    --rc-color-toolbar-button: @color-toolbar-button;
+    --rc-color-toolbar-button-background-hover: @color-toolbar-button-background-hover;
+
+    --rc-color-searchbar-background: @color-searchbar-background;
+
+    // Toolbar menu
+    --rc-color-menu-hover: @color-menu-hover;
+    --rc-color-menu-hover-background: @color-menu-hover-background;
+
+
+    // Listings
+    --rc-color-list: @color-list;
+    --rc-color-list-selected: @color-list-selected;
+    --rc-color-list-selected-background: @color-list-selected-background;
+    --rc-color-list-flagged: @color-list-flagged;
+    --rc-color-list-deleted: @color-list-deleted;
+    --rc-color-list-secondary: @color-list-secondary;
+    --rc-color-list-droptarget-background: @color-list-droptarget-background;
+    --rc-color-list-focus-indicator: @color-list-focus-indicator;
+
+    --rc-color-list-border: @color-list-border;
+    --rc-color-list-badge: @color-list-badge;
+    --rc-color-list-badge-background: @color-list-badge-background;
+    --rc-color-list-recent: @color-list-recent;
+    --rc-color-list-recent-badge: @color-list-recent-badge;
+    --rc-color-list-recent-badge-background: @color-list-recent-badge-background;
+
+    --rc-color-list-pagenav: @color-list-pagenav;
+    --rc-color-list-icon: @color-list-icon;
+    --rc-color-list-unread-status: @color-list-unread-status;
+
+    --rc-color-attachmentlist-border: @color-attachmentlist-border;
+    --rc-color-attachmentlist-background: @color-attachmentlist-background;
+
+    // Drag-n-drop layer
+    --rc-color-drag-layer: @color-drag-layer;
+    --rc-color-drag-layer-background: @color-drag-layer-background;
+    --rc-color-drag-layer-shadow: @color-drag-layer-shadow;
+
+
+    // Messages
+    --rc-color-message: @color-message;
+    --rc-color-message-border: @color-message-border;
+    --rc-color-message-background: @color-message-background;
+    --rc-color-message-text: @color-message-text;
+    --rc-color-message-link: @color-message-link;
+    --rc-color-message-link-font-weight: @color-message-link-font-weight;
+    --rc-color-message-information: @color-message-information;
+    --rc-color-message-success: @color-message-success;
+    --rc-color-message-warning: @color-message-warning;
+    --rc-color-message-error: @color-message-error;
+    --rc-color-message-loading: @color-message-loading;
+    --rc-color-message-information-text: @color-message-information-text;
+    --rc-color-message-success-text: @color-message-success-text;
+    --rc-color-message-warning-text: @color-message-warning-text;
+    --rc-color-message-error-text: @color-message-error-text;
+    --rc-color-message-loading-text: @color-message-loading-text;
+    --rc-color-message-error-box: @color-message-error-box;
+    --rc-color-message-information-box: @color-message-information-box;
+    --rc-color-message-success-box: @color-message-success-box;
+    --rc-color-message-warning-box: @color-message-warning-box;
+    --rc-color-message-error-box-background: @color-message-error-box-background;
+    --rc-color-message-information-box-background: @color-message-information-box-background;
+    --rc-color-message-success-box-background: @color-message-success-box-background;
+    --rc-color-message-warning-box-background: @color-message-warning-box-background;
+
+
+    // Popovers (menus)
+    --rc-color-popover-shadow: @color-popover-shadow;
+    --rc-color-popover-separator: @color-popover-separator;
+    --rc-color-popover-separator-background: @color-popover-separator-background;
+    --rc-color-popover-mobile-header: @color-popover-mobile-header;
+    --rc-color-popover-mobile-header-background: @color-popover-mobile-header-background;
+    --rc-color-popover-mobile-dropbutton-background: @color-popover-mobile-dropbutton-background;
+
+    // Dialogs
+    --rc-color-dialog-overlay-background: @color-dialog-overlay-background;
+    --rc-color-dialog-header: @color-dialog-header;
+    --rc-color-dialog-header-border: @color-dialog-header-border;
+
+
+    --rc-color-spinner-circle: @color-spinner-circle;
+    --rc-color-spinner-item: @color-spinner-item;
+
+
+    // Forms
+    --rc-color-input: @color-input;
+    --rc-color-input-border: @color-input-border;
+    --rc-color-input-border-focus: @color-input-border-focus;
+    --rc-color-input-border-focus-shadow: @color-input-border-focus-shadow;
+    --rc-color-input-border-invalid: @color-input-border-invalid;
+    --rc-color-input-border-invalid-shadow: @color-input-border-invalid-shadow;
+    --rc-color-input-addon-background: @color-input-addon-background;
+    --rc-color-recipient-input-border: @color-recipient-input-border;
+    --rc-color-recipient-input-background: @color-recipient-input-background;
+    --rc-color-input-placeholder: @color-input-placeholder;
+
+    --rc-color-checkbox: @color-checkbox;
+    --rc-color-checkbox-checked: @color-checkbox-checked;
+    --rc-color-checkbox-checked-disabled: @color-checkbox-checked-disabled;
+    --rc-color-checkbox-focus: @color-checkbox-focus;
+    --rc-color-checkbox-focus-shadow: @color-checkbox-focus-shadow;
+
+    --rc-color-form-hint: @color-form-hint;
+
+    --rc-color-image-upload-background: @color-image-upload-background;
+
+    --rc-color-btn-secondary: @color-btn-secondary;
+    --rc-color-btn-secondary-background: @color-btn-secondary-background;
+    --rc-color-btn-primary: @color-btn-primary;
+    --rc-color-btn-primary-background: @color-btn-primary-background;
+    --rc-color-btn-danger: @color-btn-danger;
+    --rc-color-btn-danger-background: @color-btn-danger-background;
+
+    --rc-color-quota-background: @color-quota-background;
+    --rc-color-quota-text: @color-quota-text;
+    --rc-color-quota-value: @color-quota-value;
+    --rc-color-quota-value-warning: @color-quota-value-warning;
+
+    --rc-color-blockquote-background: @color-blockquote-background;
+    --rc-color-blockquote-0: @color-blockquote-0;
+    --rc-color-blockquote-1: @color-blockquote-1;
+    --rc-color-blockquote-2: @color-blockquote-2;
+    --rc-color-blockquote-0-border: @color-blockquote-0-border;
+    --rc-color-blockquote-1-border: @color-blockquote-1-border;
+    --rc-color-blockquote-2-border: @color-blockquote-2-border;
+
+    --rc-color-mail-signature: @color-mail-signature;
+    --rc-color-mail-headers: @color-mail-headers;
+
+    --rc-color-messagepart-border: @color-messagepart-border;
+    --rc-color-messagepart-background: @color-messagepart-background;
+
+    --rc-color-spellcheck-link: @color-spellcheck-link;
+
+    --rc-color-table-border: @color-table-border;
+    --rc-color-table-selected: @color-table-selected;
+    --rc-color-table-selected-background: @color-table-selected-background;
+    // Datepicker
+    --rc-color-datepicker-border: @color-datepicker-border;
+    --rc-color-datepicker-font: @color-datepicker-font;
+    --rc-color-datepicker-highlight: @color-datepicker-highlight;
+    --rc-color-datepicker-highlight-background: @color-datepicker-highlight-background;
+    --rc-color-datepicker-active: @color-datepicker-active;
+    --rc-color-datepicker-active-background: @color-datepicker-active-background;
+
+
+    // HTML editor
+    --rc-color-editor-disabled-mask: @color-editor-disabled-mask;
+
+
+    // Image tools
+    --rc-color-image-tools: @color-image-tools;
+    --rc-color-image-tools-background: @color-image-tools-background;
+    --rc-color-image-tools-hover: @color-image-tools-hover;
+
+
+    // Scrollbars
+    --rc-color-scrollbar-thumb: @color-scrollbar-thumb;
+    --rc-color-scrollbar-track: @color-scrollbar-track;
+
+
+    // Dark mode colors
+    --rc-color-dark-main: @color-dark-main;
+    --rc-color-dark-background: @color-dark-background;
+    --rc-color-dark-font: @color-dark-font;
+    --rc-color-dark-border: @color-dark-border;
+    --rc-color-dark-hint: @color-dark-hint;
+    --rc-color-dark-information: @color-dark-information;
+    --rc-color-dark-success: @color-dark-success;
+    --rc-color-dark-warning: @color-dark-warning;
+    --rc-color-dark-error: @color-dark-error;
+
+    --rc-color-dark-list-selected: @color-dark-list-selected;
+    --rc-color-dark-list-selected-background: @color-dark-list-selected-background;
+    --rc-color-dark-list-badge: @color-dark-list-badge;
+    --rc-color-dark-list-badge-background: @color-dark-list-badge-background;
+    --rc-color-dark-list-deleted: @color-dark-list-deleted;
+    --rc-color-dark-list-droptarget-background: @color-dark-list-droptarget-background;
+    --rc-color-dark-list-border: @color-dark-list-border;
+
+    --rc-color-dark-input: @color-dark-input;
+    --rc-color-dark-input-border: @color-dark-input-border;
+    --rc-color-dark-input-background: @color-dark-input-background;
+    --rc-color-dark-input-focus: @color-dark-input-focus;
+    --rc-color-dark-input-border-focus: @color-dark-input-border-focus;
+    --rc-color-dark-input-background-focus: @color-dark-input-background-focus;
+    --rc-color-dark-input-addon-background: @color-dark-input-addon-background;
+    --rc-color-dark-input-addon-background-focus: @color-dark-input-addon-background-focus;
+    --rc-color-dark-checkbox: @color-dark-checkbox;
+    --rc-color-dark-checkbox-checked: @color-dark-checkbox-checked;
+    --rc-color-dark-btn: @color-dark-btn;
+    --rc-color-dark-btn-primary-background: @color-dark-btn-primary-background;
+    --rc-color-dark-btn-secondary-background: @color-dark-btn-secondary-background;
+    --rc-color-dark-btn-danger-background: @color-dark-btn-danger-background;
+
+    --rc-color-dark-dialog-overlay-background: @color-dark-dialog-overlay-background;
+
+    --rc-color-dark-popover-background: @color-dark-popover-background;
+    --rc-color-dark-popover-border: @color-dark-popover-border;
+
+    --rc-color-dark-message-information: @color-dark-message-information;
+    --rc-color-dark-message-success: @color-dark-message-success;
+    --rc-color-dark-message-warning: @color-dark-message-warning;
+    --rc-color-dark-message-error: @color-dark-message-error;
+    --rc-color-dark-message-loading: @color-dark-message-loading;
+
+    --rc-color-dark-scrollbar-thumb: @color-dark-scrollbar-thumb;
+    --rc-color-dark-scrollbar-track: @color-dark-scrollbar-track;
+
+    --rc-color-dark-blockquote-0: @color-dark-blockquote-0;
+    --rc-color-dark-blockquote-1: @color-dark-blockquote-1;
+    --rc-color-dark-blockquote-2: @color-dark-blockquote-2;
+    --rc-color-dark-blockquote-0-border: @color-dark-blockquote-0-border;
+    --rc-color-dark-blockquote-1-border: @color-dark-blockquote-1-border;
+    --rc-color-dark-blockquote-2-border: @color-dark-blockquote-2-border;
+}
