@@ -12,7 +12,7 @@
 /*** jQuery-UI widgets' style overrides ***/
 
 .ui-widget-overlay {
-    background-color: @color-dialog-overlay-background;
+    background-color: var(--rc-color-dialog-overlay-background);
     opacity: 1 !important; // override jQuery-UI opacity, the color above is semi-transparent
 
     &.datepicker {
@@ -21,8 +21,8 @@
 }
 
 .ui-widget {
-    border: 1px solid @color-datepicker-border;
-    box-shadow: 3px 3px 5px @color-popover-shadow;
+    border: 1px solid var(--rc-color-datepicker-border);
+    box-shadow: 3px 3px 5px var(--rc-color-popover-shadow);
     border-radius: .3rem;
 }
 
@@ -36,7 +36,7 @@
 
    .ui-state-active {
         border: 0 !important;
-        background-color: @color-menu-hover-background !important;
+        background-color: var(--rc-color-menu-hover-background) !important;
     }
 
     .ui-menu-item {
@@ -61,7 +61,7 @@
 
     .ui-dialog-titlebar {
         height: @layout-header-height;
-        border-bottom: 1px solid @color-dialog-header-border;
+        border-bottom: 1px solid var(--rc-color-dialog-header-border);
 
         button {
             &:before {
@@ -74,12 +74,12 @@
         line-height: @layout-header-height;
         font-size: 1.25rem;
         padding: 0 3rem 0 1rem;
-        color: @color-dialog-header;
+        color: var(--rc-color-dialog-header);
     }
 
     .ui-dialog-titlebar-close {
         border: 0;
-        color: @color-dialog-header;
+        color: var(--rc-color-dialog-header);
         background: transparent;
         right: 0;
         top: 0;
@@ -121,10 +121,10 @@
                 padding-right: 0;
                 padding-left: 0;
                 text-decoration: none;
-                color: @color-font;
+                color: var(--rc-color-font);
 
                 &:focus {
-                    background-color: rgb(@color-btn-primary-background, 50%);
+                    background-color: rgb(var(--rc-color-btn-primary-background), 50%);
 		    /* less: rgba(55, 190, 255, 0.5) */
                 }
 
@@ -185,7 +185,7 @@
         .ui-dialog-titlebar {
             height: @layout-touch-header-height;
             text-align: center;
-            background-color: @color-layout-mobile-header-background;
+            background-color: var(--rc-color-layout-mobile-header-background);
         }
 
         .ui-dialog-title {
@@ -204,9 +204,9 @@
         .ui-dialog-buttonpane {
             padding: 0 !important;
             text-align: center !important;
-            border-top: 1px solid @color-dialog-header-border;
+            border-top: 1px solid var(--rc-color-dialog-header-border);
             height: @layout-header-height !important;
-            background-color: @color-layout-mobile-footer-background;
+            background-color: var(--rc-color-layout-mobile-footer-background);
 
             .ui-dialog-buttonset {
                 justify-content: space-around;
@@ -235,12 +235,12 @@
 
                     &.btn-primary,
                     &.btn-secondary {
-                        color: @color-toolbar-button;
+                        color: var(--rc-color-toolbar-button);
                         background: transparent;
                     }
 
                     &.btn-danger {
-                        color: @color-btn-danger-background;
+                        color: var(--rc-color-btn-danger-background);
                         background: transparent;
                     }
 
@@ -255,7 +255,7 @@
                 }
 
                 a.btn-link {
-                    color: @color-toolbar-button;
+                    color: var(--rc-color-toolbar-button);
                     margin: 0;
                     padding: .45rem;
                     font-size: 90%;
@@ -279,7 +279,7 @@
 
     .ui-slider-range {
         border-radius: .3rem;
-        background: hsl(from @color-main h s calc(l + 30));
+        background: hsl(from var(--rc-color-main) h s calc(l + 30));
 	/* less: #d0f0ff */
     }
 
@@ -287,8 +287,8 @@
         border-radius: .3rem;
 
         &.ui-state-active {
-            background: @color-main;
-            border-color: @color-main-dark;
+            background: var(--rc-color-main);
+            border-color: var(--rc-color-main-dark);
         }
     }
 }
@@ -315,7 +315,7 @@
     }
 
     .ui-datepicker-header {
-        border-bottom: 1px solid @color-dialog-header-border;
+        border-bottom: 1px solid var(--rc-color-dialog-header-border);
 
         a {
             height: 4rem;
@@ -335,7 +335,7 @@
     .ui-datepicker-next {
         cursor: pointer;
         width: auto;
-        color: @color-font;
+        color: var(--rc-color-font);
         text-decoration: none;
 
         &:before {
@@ -365,20 +365,20 @@
     &.ui-widget-content .ui-state-default {
         border: 0;
         background: transparent;
-        color: @color-datepicker-font;
+        color: var(--rc-color-datepicker-font);
     }
 
     .ui-datepicker-days-cell-over a,
     .ui-datepicker-days-cell-over a.ui-state-default,
     .ui-state-highlight,
     &.ui-widget-content .ui-state-highlight {
-        background: @color-datepicker-highlight-background;
-        color: @color-datepicker-highlight;
+        background: var(--rc-color-datepicker-highlight-background);
+        color: var(--rc-color-datepicker-highlight);
     }
 
     a.ui-state-active {
-        background: @color-datepicker-active-background !important;
-        color: @color-datepicker-active !important;
+        background: var(--rc-color-datepicker-active-background) !important;
+        color: var(--rc-color-datepicker-active) !important;
         font-weight: bold;
     }
 
@@ -399,8 +399,8 @@
 }
 
 .minicolors-panel {
-    border: 1px solid @color-datepicker-border;
-    box-shadow: 3px 3px 5px @color-popover-shadow;
+    border: 1px solid var(--rc-color-datepicker-border);
+    box-shadow: 3px 3px 5px var(--rc-color-popover-shadow);
     border-radius: .3rem;
     height: 152px;
     padding: 1px;

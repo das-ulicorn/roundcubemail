@@ -19,9 +19,9 @@
     opacity: .95;
     width: 100%;
     padding: .75em;
-    color: @color-message;
-    border: 1px solid @color-message-border;
-    background-color: @color-message-background;
+    color: var(--rc-color-message);
+    border: 1px solid var(--rc-color-message-border);
+    background-color: var(--rc-color-message-background);
     display: flex;
     align-items: center;
 
@@ -35,7 +35,7 @@
 
     & > i.icon {
         line-height: 1;
-        color: hsl(from @color-black h s calc(l + 25));
+        color: hsl(from var(--rc-color-black) h s calc(l + 25));
 	/* ^ less: #4d5f66 */
         margin: auto 0;
     }
@@ -51,7 +51,7 @@
     }
 
     &.loading {
-        color: @color-message-loading;
+        color: var(--rc-color-message-loading);
 
         & > i.icon:before {
             content: @fa-var-circle-notch;
@@ -62,17 +62,17 @@
 
     &.alert-success > i.icon:before {
         content: @fa-var-check-circle;
-        color: @color-message-success;
+        color: var(--rc-color-message-success);
     }
 
     &.alert-warning > i.icon:before {
         content: @fa-var-exclamation-triangle;
-        color: @color-message-warning;
+        color: var(--rc-color-message-warning);
     }
 
     &.alert-danger > i.icon:before {
         content: @fa-var-exclamation-circle;
-        color: @color-message-error;
+        color: var(--rc-color-message-error);
     }
 
     &.vcardattachment > i.icon:before {
@@ -126,7 +126,7 @@
     }
 
     a:not(.btn) {
-        color: @color-message-link;
+        color: var(--rc-color-message-link);
         font-weight: @color-message-link-font-weight;
     }
 
@@ -152,23 +152,23 @@
     }
 
     &.boxerror {
-        background-color: @color-message-error-box-background;
-        & when not(@color-message-error-box = @color-message) { color: @color-message-error-box; }
+        background-color: var(--rc-color-message-error-box-background);
+        color: var(--rc-color-message-error-box);
     }
 
     &.boxinformation {
-        background-color: @color-message-information-box-background;
-        & when not(@color-message-information-box = @color-message) { color: @color-message-information-box; }
+        background-color: var(--rc-color-message-information-box-background);
+        color: var(--rc-color-message-information-box);
     }
 
     &.boxconfirmation {
-        background-color: @color-message-success-box-background;
-        & when not(@color-message-error-box = @color-message) { color: @color-message-error-box; }
+        background-color: var(--rc-color-message-success-box-background);
+        color: var(--rc-color-message-error-box);
     }
 
     &.boxwarning {
-        background-color: @color-message-warning-box-background;
-        & when not(@color-message-warning-box = @color-message) { color: @color-message-warning-box; }
+        background-color: var(--rc-color-message-warning-box-background);
+        color: var(--rc-color-message-warning-box); 
     }
 
     & + table {
@@ -193,8 +193,8 @@
     }
 
     div {
-        background-color: @color-message;
-        color: @color-message-text;
+        background-color: var(--rc-color-message);
+        color: var(--rc-color-message-text);
 
         @media screen and (max-width: @screen-width-xs) {
             margin: 0;
@@ -212,7 +212,7 @@
         }
 
         & > i.icon:before {
-            color: @color-message-text;
+            color: var(--rc-color-message-text);
         }
 
         &:last-child {
@@ -221,42 +221,42 @@
     }
 
     .loading {
-        background-color: @color-message-loading;
-        & when not(@color-message-loading-text = @color-message-text) { color: @color-message-loading-text; }
+        background-color: var(--rc-color-message-loading);
+        color: var(--rc-color-message-loading-text);
         & > i.icon:before {
-            & when not(@color-message-loading-text = @color-message-text) { color: @color-message-loading-text; }
+            color: var(--rc-color-message-loading-text);
         }
     }
 
     .alert-info.information {
-        background-color: @color-message-information;
-        & when not(@color-message-information-text = @color-message-text) { color: @color-message-information-text; }
+        background-color: var(--rc-color-message-information);
+        color: var(--rc-color-message-information-text);
         & > i.icon:before {
-            & when not(@color-message-information-text = @color-message-text) { color: @color-message-information-text; }
+            color: var(--rc-color-message-information-text);
         }
     }
 
     .alert-success {
-        background-color: @color-message-success;
-        & when not(@color-message-success-text = @color-message-text) { color: @color-message-success-text; }
+        background-color: var(--rc-color-message-success);
+        color: var(--rc-color-message-success-text);
         & > i.icon:before {
-            & when not(@color-message-success-text = @color-message-text) { color: @color-message-success-text; }
+            color: var(--rc-color-message-success-text); 
         }
     }
 
     .alert-warning {
-        background-color: @color-message-warning;
-        & when not(@color-message-warning-text = @color-message-text) { color: @color-message-warning-text; }
+        background-color: var(--rc-color-message-warning);
+        color: var(--rc-color-message-warning-text);
         & > i.icon:before {
-            & when not(@color-message-warning-text = @color-message-text) { color: @color-message-warning-text; }
+            color: var(--rc-color-message-warning-text);
         }
     }
 
     .alert-danger {
-        background-color: @color-message-error;
-        & when not(@color-message-error-text = @color-message-text) { color: @color-message-error-text; }
+        background-color: var(--rc-color-message-error);
+        color: var(--rc-color-message-error-text);
         & > i.icon:before {
-            & when not(@color-message-error-text = @color-message-text) { color: @color-message-error-text; }
+            color: var(--rc-color-message-error-text);
         }
     }
 

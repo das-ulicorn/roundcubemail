@@ -24,9 +24,9 @@ font.bold {
 #rcmdraglayer {
     min-width: 260px;
     width: 260px;
-    background-color: @color-drag-layer-background;
-    color: @color-drag-layer;
-    box-shadow: 3px 3px 5px @color-drag-layer-shadow;
+    background-color: var(--rc-color-drag-layer-background);
+    color: var(--rc-color-drag-layer);
+    box-shadow: 3px 3px 5px var(--rc-color-drag-layer-shadow);
     border-radius: .3rem;
     z-index: 250;
     opacity: .92;
@@ -82,8 +82,8 @@ font.bold {
         }
 
         .footer {
-            border-top: 1px solid @color-layout-border;
-            background-color: @color-searchbar-background;
+            border-top: 1px solid var(--rc-color-layout-border);
+            background-color: var(--rc-color-searchbar-background);
         }
     }
 }
@@ -112,9 +112,9 @@ font.bold {
 // this is when image thumbnails are enabled
 p.image-attachment {
     position: relative;
-    border: 1px solid @color-border;
+    border: 1px solid var(--rc-color-border);
     border-radius: .3rem;
-    background-color: @color-message-background;
+    background-color: var(--rc-color-message-background);
     float: left;
     margin: .5rem;
     min-width: 47%;
@@ -136,7 +136,7 @@ p.image-attachment {
     }
 
     span {
-        color: @color-form-hint;
+        color: var(--rc-color-form-hint);
         padding: 0 .5rem;
         font-size: 90%;
         white-space: nowrap;
@@ -193,7 +193,7 @@ fieldset.image-attachment {
     legend {
         color: @color-form-hint;
         font-size: .9rem;
-        border-top: 1px solid hsl(from @color-mail-headers h s calc(l + 50));
+        border-top: 1px solid hsl(from var(--rc-color-mail-headers) h s calc(l + 50));
 	/* less: #f4f5f5 */
         margin: 0;
     }
@@ -229,9 +229,9 @@ fieldset.image-attachment {
     .spinner-border {
         width: 7rem;
         height: 7rem;
-        color: @color-spinner-circle;
+        color: var(--rc-color-spinner-circle);
         border: 1rem solid;
-        border-color: currentColor @color-spinner-item currentColor currentColor;
+        border-color: currentColor var(--rc-color-spinner-item) currentColor currentColor;
     }
 }
 
@@ -277,7 +277,7 @@ fieldset.image-attachment {
     padding: .5rem 1rem;
     display: flex;
     align-items: center;
-    color: @color-quota-text;
+    color: var(--rc-color-quota-text);
 
     &:before {
         &:extend(.font-icon-class);
@@ -294,20 +294,20 @@ fieldset.image-attachment {
         flex: 1;
         height: .5rem;
         margin: 0 1rem;
-        background-color: @color-quota-background;
-        border: 1px solid @color-layout-border;
+        background-color: var(--rc-color-quota-background);
+        border: 1px solid var(--rc-color-layout-border);
         border-radius: .25rem;
         overflow: hidden;
     }
 
     .value {
         display: block;
-        background-color: @color-quota-value;
+        background-color: var(--rc-color-quota-value);
         height: 1rem;
         opacity: .75;
 
         &.warning {
-            background-color: @color-quota-value-warning;
+            background-color: var(--rc-color-quota-value-warning);
         }
     }
 }
@@ -320,7 +320,7 @@ fieldset.image-attachment {
     overflow: hidden;
     transform: translateX(-87%);
     transition: transform 0.3s ease-in-out;
-    background-color: @color-image-tools-background;
+    background-color: var(--rc-color-image-tools-background);
     border-radius: 0 .3rem .3rem 0;
 
     .menu {
@@ -355,7 +355,7 @@ fieldset.image-attachment {
 
         &:focus,
         &:hover {
-            background-color: @color-image-tools-hover !important;
+            background-color: var(--rc-color-image-tools-hover) !important;
             outline: 0;
         }
     }
@@ -377,8 +377,8 @@ fieldset.image-attachment {
     .root {
         line-height: 1;
         font-style: italic;
-        color: @color-popover-separator;
-        background-color: @color-popover-separator-background;
+        color: var(--rc-color-popover-separator);
+        background-color: var(--rc-color-popover-separator-background);
     }
 
     th:first-child,
@@ -411,7 +411,7 @@ fieldset.image-attachment {
     display: flex;
     flex-direction: column;
     margin-bottom: .5rem;
-    border: 1px solid @color-table-border;
+    border: 1px solid var(--rc-color-table-border);
 
     & > .content {
         overflow-x: auto;
@@ -425,7 +425,7 @@ fieldset.image-attachment {
 
     & > .footer {
         height: 3.5rem;
-        border-top: 1px solid @color-table-border;
+        border-top: 1px solid var(--rc-color-table-border);
         text-align: left;
 
         a {
@@ -453,12 +453,12 @@ fieldset.image-attachment {
         }
 
         tr:last-child td {
-            border-bottom: 1px solid @color-table-border;
+            border-bottom: 1px solid var(--rc-color-table-border);
         }
 
         tr.selected td {
-            background-color: @color-table-selected-background;
-            color: @color-table-selected;
+            background-color: var(--rc-color-table-selected-background);
+            color: var(--rc-color-table-selected);
             outline: 0;
         }
 
@@ -573,7 +573,7 @@ table.table {
     }
 
     tr.deleted td {
-        color: @color-list-deleted !important;
+        color: var(--rc-color-list-deleted) !important;
     }
 }
 

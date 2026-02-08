@@ -205,10 +205,10 @@ html.touch {
         width: @floating-action-button-size;
         height: @floating-action-button-size;
         border-radius: 50%;
-        background: @color-main;
+        background: var(--rc-color-main);
         color: white;
         opacity: .95;
-        box-shadow: 0 0 5px 5px hsl(from @color-main h s calc(l + 35));
+        box-shadow: 0 0 5px 5px hsl(from var(--rc-color-main) h s calc(l + 35));
 	/* ^less: #eaf8ff */
         margin: 0 1rem 1rem 0;
 
@@ -236,52 +236,52 @@ html.touch {
 
 .btn {
     &:focus {
-        box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 30%);
+        box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-primary-background), 30%);
 	/* ^less: rgba(55, 190, 255, 0.3) */
     }
 }
 
 .btn-link {
-    color: @color-link;
+    color: var(--rc-color-link);
 }
 
 .btn-secondary {
-    color: @color-btn-secondary;
-    background: @color-btn-secondary-background;
-    border-color: @color-btn-secondary-background;
+    color: var(--rc-color-btn-secondary);
+    background: var(--rc-color-btn-secondary-background);
+    border-color: var(--rc-color-btn-secondary-background);
 
     &:focus {
-        background: hsl(from @color-btn-secondary-background h s calc(l - 5));
+        background: hsl(from var(--rc-color-btn-secondary-background) h s calc(l - 5));
 	/* ^less: #7c939c */
-        border-color: hsl(from @color-btn-secondary-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-secondary-background) h s calc(l - 7));
 	/* ^less: #778e98 */
-        box-shadow: 0 0 0 .2rem rgb(@color-btn-secondary-background, 50%);
+        box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-secondary-background), 50%);
 	/* ^less: rgba(139, 159, 167, 0.50) */
     }
 
     &:hover {
-        background: hsl(from @color-btn-secondary-background h s calc(l -  5));
+        background: hsl(from var(--rc-color-btn-secondary-background) h s calc(l -  5));
 	/* ^less: #7c939c */
-        border-color: hsl(from @color-btn-secondary-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-secondary-background) h s calc(l - 7));
 	/* ^less: #778e98 */
     }
 
     &.disabled,
     &:disabled {
-        background: @color-btn-secondary-background;
-        border-color: @color-btn-secondary-background;
+        background: var(--rc-color-btn-secondary-background);
+        border-color: var(--rc-color-btn-secondary-background);
     }
 
     &:not(:disabled):not(.disabled) {
         &:active,
         &.active {
-            background: hsl(from @color-btn-secondary-background h s calc(l - 10));
+            background: hsl(from var(--rc-color-btn-secondary-background) h s calc(l - 10));
 	    /* ^less: #6e8791 */
-            border-color: hsl(from @color-btn-secondary-background h s calc(l - 12));
+            border-color: hsl(from var(--rc-color-btn-secondary-background) h s calc(l - 12));
 	    /* ^less: #6a828b */
 	    
             &:focus {
-                box-shadow: 0 0 0 .2rem rgb(@color-btn-secondary-background, 53%);
+                box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-secondary-background), 53%);
 		/* ^less: rgba(139, 159, 167, 0.53) */
             }
         }
@@ -289,42 +289,42 @@ html.touch {
 }
 
 .btn-primary {
-    color: @color-btn-primary;
-    background: @color-btn-primary-background;
-    border-color: @color-btn-primary-background;
+    color: var(--rc-color-btn-primary);
+    background: var(--rc-color-btn-primary-background);
+    border-color: var(--rc-color-btn-primary-background);
 
     &:focus {
-        background: hsl(from @color-btn-primary-background h s calc(l - 5));
+        background: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 5));
 	/* ^less: #1eb6ff */
-        border-color: hsl(from @color-btn-primary-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 7));
 	/* ^less: #13b2ff */
-        box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 50%);
+        box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-primary-background), 50%);
 	/* ^less: rgba(55, 190, 255, 0.5) */
     }
 
     &:hover {
-        background: hsl(from @color-btn-primary-background h s calc(l - 5));
+        background: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 5));
 	/* ^less: #1eb6ff */
-        border-color: hsl(from @color-btn-primary-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 7));
 	/* ^less: #13b2ff */
     }
 
     &.disabled,
     &:disabled {
-        background: @color-btn-primary-background;
-        border-color: @color-btn-primary-background;
+        background: var(--rc-color-btn-primary-background);
+        border-color: var(--rc-color-btn-primary-background);
     }
 
     &:not(:disabled):not(.disabled) {
         &:active,
         &.active {
-            background: hsl(from @color-btn-primary-background h s calc(l - 10));
+            background: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 10));
 	    /* ^less: #04adff */
-            border-color: hsl(from @color-btn-primary-background h s calc(l - 12));
+            border-color: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 12));
 	    /* ^less: #00a8f9 */
 
             &:focus {
-                box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 53%);
+                box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-primary-background), 53%);
 		/* ^less: rgba(55, 190, 255, 0.5) */
             }
         }
@@ -332,42 +332,42 @@ html.touch {
 }
 
 .btn-danger {
-    color: @color-btn-danger;
-    background: @color-btn-danger-background;
-    border-color: @color-btn-danger-background;
+    color: var(--rc-color-btn-danger);
+    background: var(--rc-color-btn-danger-background);
+    border-color: var(--rc-color-btn-danger-background);
 
     &:focus {
-        background: hsl(from @color-btn-danger-background h s calc(l - 5));
+        background: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 5));
 	/* ^less: #ff3c38 */
-        border-color: hsl(from @color-btn-danger-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 7));
 	/* ^less: #ff322e */
-        box-shadow: 0 0 0 .2rem rgb(@color-btn-danger-background, 50%);
+        box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-danger-background), 50%);
 	/* ^less: rgba(255, 85, 82, 0.5); */
     }
 
     &:hover {
-        background: hsl(from @color-btn-danger-background h s calc(l - 5));
+        background: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 5));
 	/* ^less: #ff3c38 */
-        border-color: hsl(from @color-btn-danger-background h s calc(l - 7));
+        border-color: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 7));
 	/* ^less: #ff322e */
     }
 
     &.disabled,
     &:disabled {
-        background: @color-btn-danger-background;
-        border-color: @color-btn-danger-background;
+        background: var(--rc-color-btn-danger-background);
+        border-color: var(--rc-color-btn-danger-background);
     }
 
     &:not(:disabled):not(.disabled) {
         &:active,
         &.active {
-            background: hsl(from @color-btn-danger-background h s calc(l - 10));
+            background: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 10));
 	    /* ^less: #ff231f */
-            border-color: hsl(from @color-btn-danger-background h s calc(l - 12));
+            border-color: hsl(from var(--rc-color-btn-danger-background) h s calc(l - 12));
 	    /* ^less: #ff1915 */
 	    
             &:focus {
-                box-shadow: 0 0 0 .2rem rgb(@color-btn-danger-background, 53%);
+                box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-danger-background), 53%);
 		/* ^less: rgba(255, 85, 82, 0.53) */
             }
         }

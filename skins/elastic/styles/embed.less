@@ -15,7 +15,7 @@
 
 .mce-content-body {
     margin: 4px;
-    color: @color-input;
+    color: var(--rc-color-input);
 
     div.pre {
         font-family: monospace;
@@ -34,8 +34,8 @@
     padding: .5em;
     margin: 0 0 .5em 0;
     opacity: .95;
-    color: @color-message;
-    background-color: @color-message-warning-box-background;
+    color: var(--rc-color-message);
+    background-color: var(--rc-color-message-warning-box-background);
     display: flex;
     align-items: center;
 
@@ -46,7 +46,7 @@
         width: 1em;
         margin-right: .3em;
         content: @fa-var-exclamation-triangle;
-        color: @color-message-warning;
+        color: var(--rc-color-message-warning);
     }
 
     span {
@@ -54,11 +54,11 @@
     }
 
     a {
-        color: @color-link;
+        color: var(--rc-color-link);
     }
 
     a:hover {
-        color: @color-link-hover;
+        color: var(--rc-color-link-hover);
     }
 
     button {
@@ -70,27 +70,27 @@
         line-height: 1.5;
         border-radius: .25em;
         border: 1px solid transparent;
-        color: @color-btn-primary;
-        background: @color-btn-primary-background;
+        color: var(--rc-color-btn-primary);
+        background: var(--rc-color-btn-primary-background);
 
         &:focus {
-            box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 50%);
+            box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-primary-background), 50%);
 	    /* less: rgba(55, 190, 255, 0.50) */
         }
 
         &:hover {
-            background: hsl(from @color-btn-primary-background h s calc(l - 8));
+            background: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 8));
 	    /* less: #0eb1ff */
-            border-color: hsl(from @color-btn-primary-background  h s calc(l - 10));
+            border-color: hsl(from var(--rc-color-btn-primary-background)  h s calc(l - 10));
 	    /* less: #04adff */
         }
 
         &:not([disabled]):not(.disabled):active {
-            background: hsl(from @color-btn-primary-background h s calc(l - 11));
+            background: hsl(from var(--rc-color-btn-primary-background) h s calc(l - 11));
 	    /* less: #00abfe */
-            border-color: hsl(from @color-btn-primary-background h s calc(l -  13));
+            border-color: hsl(from var(--rc-color-btn-primary-background) h s calc(l -  13));
 	    /* less: #00a4f4 */
-            box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 53%);
+            box-shadow: 0 0 0 .2rem rgb(var(--rc-color-btn-primary-background), 53%);
 	    /* less: rgba(55, 190, 255, 0.53) */
         }
     }
