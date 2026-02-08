@@ -22,12 +22,12 @@ div.tox {
 
     &.tox-tinymce {
         border-radius: .25rem;
-        border: 1px solid @color-input-border;
+        border: 1px solid var(--rc-color-input-border);
     }
 
     &.focused {
-        border-color: @color-input-border-focus !important;
-        box-shadow: 0 0 0 .2rem @color-input-border-focus-shadow !important;
+        border-color: var(--rc-color-input-border-focus) !important;
+        box-shadow: 0 0 0 .2rem var(--rc-color-input-border-focus-shadow) !important;
     }
 
     .tox-toolbar-overlord {
@@ -36,7 +36,7 @@ div.tox {
         & > div {
             // The svg is copied from TinyMCE with modified height params
             background: url("data:image/svg+xml;charset=utf8,%3Csvg height='33px' viewBox='0 0 40 33px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='32px' width='100' height='1' fill='%23cccccc'/%3E%3C/svg%3E");
-            background-color: @color-input-addon-background;
+            background-color: var(--rc-color-input-addon-background);
         }
     }
 
@@ -46,7 +46,7 @@ div.tox {
 
     // This one is for mobile
     .tox-toolbar {
-        background-color: @color-input-addon-background;
+        background-color: var(--rc-color-input-addon-background);
     }
 
     .tox-edit-area {
@@ -55,7 +55,7 @@ div.tox {
 
     .tox-dialog {
         border-radius: 0;
-        border-color: @color-layout-border;
+        border-color: var(--rc-color-layout-border);
         box-shadow: none;
         align-self: unset !important;
 
@@ -65,11 +65,11 @@ div.tox {
         }
 
         .tox-dialog__body-nav-item--active {
-            color: @color-link;
+            color: var(--rc-color-link);
             border-color: transparent;
 
             &:hover {
-                color: @color-link-hover;
+                color: var(--rc-color-link-hover);
             }
         }
     }
@@ -83,17 +83,17 @@ div.tox {
     }
 
     .tox-dialog-wrap__backdrop {
-        background-color: @color-dialog-overlay-background;
+        background-color: var(--rc-color-dialog-overlay-background);
     }
 
     .tox-dialog__header {
         height: (@layout-header-height - 1px);
-        border-bottom: 1px solid @color-dialog-header-border;
+        border-bottom: 1px solid var(--rc-color-dialog-header-border);
         justify-content: flex-end; // fixes close button position when dialog has no title
         padding: 0;
 
         .tox-button {
-            color: @color-dialog-header;
+            color: var(--rc-color-dialog-header);
             right: 0;
             height: (@layout-header-height - .7rem);
             width: 2.25em;
@@ -124,7 +124,7 @@ div.tox {
         padding: 0 1rem;
 
         @media screen and (max-width: @screen-width-xs) {
-            border-top: 1px solid @color-dialog-header-border;
+            border-top: 1px solid var(--rc-color-dialog-header-border);
         }
 
         & > div {
@@ -150,13 +150,13 @@ div.tox {
 
             // this is redundant, but required because of tinymce styles interference
             &:focus:not(:disabled) {
-                background: @color-btn-primary-background;
-                border-color: @color-btn-primary-background;
+                background: var(--rc-color-btn-primary-background);
+                border-color: var(--rc-color-btn-primary-background);
             }
 
             &.tox-button--secondary {
                 .btn-secondary();
-                color: @color-btn-secondary;
+                color: var(--rc-color-btn-secondary);
 
                 &:before {
                     content: @fa-var-times;
@@ -164,8 +164,8 @@ div.tox {
 
                 // this is redundant, but required because of tinymce styles interference
                 &:focus:not(:disabled) {
-                    background: @color-btn-secondary-background;
-                    border-color: @color-btn-secondary-background;
+                    background: var(--rc-color-btn-secondary-background);
+                    border-color: var(--rc-color-btn-secondary-background);
                 }
             }
         }
@@ -201,7 +201,7 @@ div.tox {
         font-weight: bold;
         padding: 0 0 0 1rem;
         width: 100%;
-        color: @color-dialog-header;
+        color: var(--rc-color-dialog-header);
     }
 
     // Make toolbar buttons smaller
@@ -218,7 +218,7 @@ div.tox {
     }
 
     .tox-label {
-        color: @color-font;
+        color: var(--rc-color-font);
         padding-bottom: .25rem;
     }
 
@@ -231,14 +231,14 @@ div.tox {
         .font-family() !important;
         font-size: @page-font-size;
         line-height: 1.5;
-        color: @color-font;
+        color: var(--rc-color-font);
         border-radius: .25rem;
         min-height: 0;
         padding: .375rem .75rem;
 
         &:focus {
-            border-color: @color-input-border-focus;
-            box-shadow: 0 0 0 .2rem @color-input-border-focus-shadow;
+            border-color: var(--rc-color-input-border-focus);
+            box-shadow: 0 0 0 .2rem var(--rc-color-input-border-focus-shadow);
         }
     }
 
@@ -295,7 +295,7 @@ div.tox {
         }
 
         .tox-dialog__header {
-            background-color: @color-layout-mobile-header-background;
+            background-color: var(--rc-color-layout-mobile-header-background);
 
             .tox-button {
                 display: none;
@@ -309,10 +309,10 @@ div.tox {
         }
 
         .tox-dialog__footer {
-            background-color: @color-layout-mobile-footer-background;
+            background-color: var(--rc-color-layout-mobile-footer-background);
 
             .tox-button {
-                color: @color-font !important;
+                color: var(--rc-color-font) !important;
                 background: transparent !important;
                 padding: .45rem;
                 margin: 0 !important;
@@ -334,7 +334,7 @@ div.tox {
                     background: transparent;
                     border: 0;
                     box-shadow: none;
-                    color: @color-font;
+                    color: var(--rc-color-font);
                 }
             }
 
@@ -357,7 +357,7 @@ div.tox {
     padding: 1rem .5rem 10rem .5rem !important;
 
     &.droptarget {
-        border: .2rem dashed @color-table-border;
+        border: .2rem dashed var(--rc-color-table-border);
 
         &:after {
             margin-top: 2rem;
@@ -386,7 +386,7 @@ div.tox {
 
             &:hover,
             &:focus {
-                background: @color-list-selected-background;
+                background: var(--rc-color-list-selected-background);
             }
 
             span.name {
@@ -400,7 +400,7 @@ div.tox {
                 height: 80px;
                 width: 80px;
                 display: flex;
-                border: 1px solid @color-list-border;
+                border: 1px solid var(--rc-color-list-border);
                 background: white;
                 border-radius: .75rem;
                 overflow: hidden;
@@ -430,8 +430,8 @@ div.tox {
         top: 1px;
         right: 1px;
         border-radius: .25rem .25rem 0 0;
-        border-bottom: 1px solid @color-input-border;
-        background-color: @color-input-addon-background;
+        border-bottom: 1px solid var(--rc-color-input-border);
+        background-color: var(--rc-color-input-addon-background);
 
         .mce-i-html {
             display: block;
@@ -479,7 +479,7 @@ div.tox {
 
     & > iframe { // e.g. mailvelope frame
         border-radius: .3rem;
-        border: 1px solid @color-input-border;
+        border: 1px solid var(--rc-color-input-border);
         min-height: 30em;
     }
 }
@@ -497,13 +497,13 @@ div.tox {
 
     // from Bootstrap's textarea
     padding: .5rem .75rem;
-    border: 1px solid @color-input-border;
+    border: 1px solid var(--rc-color-input-border);
     border-radius: .3rem;
     line-height: 1.5;
 }
 
 .googie_link {
-    color: @color-spellcheck-link;
+    color: var(--rc-color-spellcheck-link);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -514,8 +514,8 @@ div.tox {
         width: auto;
 
         &.googie_list_onhover {
-            color: @color-menu-hover;
-            background-color: @color-menu-hover-background;
+            color: var(--rc-color-menu-hover);
+            background-color: var(--rc-color-menu-hover-background);
         }
 
         .googie_list_revert:before {

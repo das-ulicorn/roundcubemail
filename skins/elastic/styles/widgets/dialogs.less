@@ -46,8 +46,8 @@
 }
 
 .popover {
-    box-shadow: 3px 3px 5px @color-popover-shadow;
-    border-color: @color-layout-border;
+    box-shadow: 3px 3px 5px var(--rc-color-popover-shadow);
+    border-color: var(--rc-color-layout-border);
     padding: 0;
     z-index: 1300;
 
@@ -96,13 +96,13 @@ html.layout-phone {
         }
 
         .listing li:last-child {
-            border-bottom: 1px solid @color-list-border;
+            border-bottom: 1px solid var(--rc-color-list-border);
         }
     }
 
     .popover-overlay {
         z-index: 1299;
-        background-color: @color-dialog-overlay-background;
+        background-color: var(--rc-color-dialog-overlay-background);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -118,8 +118,8 @@ html.layout-phone {
         min-height: @layout-touch-header-height; // for when it's a flex item
         line-height: @layout-touch-header-height;
         font-size: @layout-touch-header-font-size;
-        color: @color-popover-mobile-header;
-        background-color: @color-popover-mobile-header-background;
+        color: var(--rc-color-popover-mobile-header);
+        background-color: var(--rc-color-popover-mobile-header-background);
 
         &:before {
             display: none; // hide the Bootstrap's popover arrow element
@@ -128,7 +128,7 @@ html.layout-phone {
         a {
             display: inline-block;
             width: 100%;
-            color: @color-popover-mobile-header;
+            color: var(--rc-color-popover-mobile-header);
         }
     }
 
@@ -196,7 +196,7 @@ html.touch .popover {
 
         &.revoked,
         &.disabled {
-            color: @color-list-secondary;
+            color: var(--rc-color-list-secondary);
         }
 
         label {

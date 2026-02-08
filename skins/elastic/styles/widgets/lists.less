@@ -14,7 +14,7 @@
 .listing {
     tbody td,
     li {
-        border-bottom: 1px solid @color-list-border;
+        border-bottom: 1px solid var(--rc-color-list-border);
         cursor: default;
         font-weight: normal;
         line-height: @listing-line-height;
@@ -25,7 +25,7 @@
         padding: 0 .5rem;
         white-space: nowrap;
         vertical-align: middle;
-        color: @color-list;
+        color: var(--rc-color-list);
     }
 
     tbody td {
@@ -33,7 +33,7 @@
         outline: none;
 
         a {
-            color: @color-list;
+            color: var(--rc-color-list);
         }
     }
 
@@ -46,8 +46,8 @@
 
     li.selected,
     tr.selected td {
-        color: @color-list-selected;
-        background-color: @color-list-selected-background;
+        color: var(--rc-color-list-selected);
+        background-color: var(--rc-color-list-selected-background);
     }
 
     td.selection {
@@ -96,12 +96,12 @@
 
     li.droptarget > a,
     tr.droptarget > td {
-        background-color: @color-list-droptarget-background;
+        background-color: var(--rc-color-list-droptarget-background);
     }
 
     li.disabled,
     tr.disabled td {
-        color: @color-list-deleted;
+        color: var(--rc-color-list-deleted);
     }
 
     li > a.virtual,
@@ -110,7 +110,7 @@
     }
 
     span.secondary {
-        color: @color-list-secondary;
+        color: var(--rc-color-list-secondary);
     }
 }
 
@@ -126,7 +126,7 @@ html:not(.touch) {
         li > a:focus,
         &.focus tbody tr.focused > td:first-child,
         &.focus:not(.withselection) tbody tr.focused > td.selection + td {
-            border-left: 2px solid @color-list-focus-indicator;
+            border-left: 2px solid var(--rc-color-list-focus-indicator);
             outline: 0;
         }
     }
@@ -157,7 +157,7 @@ ul.listing {
         list-style: none;
 
         ul {
-            border-top: 1px solid @color-list-border;
+            border-top: 1px solid var(--rc-color-list-border);
             padding-left: 1.5em;
 
             li:last-child {
@@ -205,7 +205,7 @@ ul.listing {
     width: 80%;
     text-align: center;
     font-weight: bold;
-    color: @color-list-secondary;
+    color: var(--rc-color-list-secondary);
 }
 
 .listing-hover-menu {
@@ -225,7 +225,7 @@ ul.listing {
         width: 1.5em;
         line-height: 1;
         margin: 0.25em 0.25em;
-        color: @color-font;
+        color: var(--rc-color-font);
 
         &:hover {
             background: transparent;
@@ -234,7 +234,7 @@ ul.listing {
 
     span.txt {
         font-size: 90%;
-        color: @color-black-shade-text;
+        color: var(--rc-color-black-shade-text);
         display: inline-block;
         vertical-align: middle;
         margin: -1.25em 0.25em 0;
@@ -261,7 +261,7 @@ html.touch {
 @media screen and (max-width: @screen-width-large) {
     .listing.selection-large-only {
         li.selected {
-            color: @color-list;
+            color: var(--rc-color-list);
             background-color: transparent;
         }
     }
@@ -427,14 +427,14 @@ html.ie11 .listing.iconized li a:before {
         border-left: 0;
 
         &:not(.disabled):hover {
-            color: @color-menu-hover;
-            background-color: @color-menu-hover-background;
+            color: var(--rc-color-menu-hover);
+            background-color: var(--rc-color-menu-hover-background);
         }
     }
 
     li.selected {
-        color: @color-menu-hover;
-        background-color: @color-menu-hover-background;
+        color: var(--rc-color-menu-hover);
+        background-color: var(--rc-color-menu-hover-background);
     }
 
     td {
@@ -476,8 +476,8 @@ ul.treelist {
 
             & > div > a, // this is used e.g. by kolab_addressbook
             & > a {
-                color: @color-list-selected;
-                background-color: @color-list-selected-background;
+                color: var(--rc-color-list-selected);
+                background-color: var(--rc-color-list-selected-background);
             }
         }
 
@@ -544,8 +544,8 @@ ul.treelist {
                 margin: ((@listing-line-height - 1.4 * @page-font-size) / 2);
                 padding: 0 .3em;
                 border-radius: .4em;
-                background: @color-list-badge-background;
-                color: @color-list-badge;
+                background: var(--rc-color-list-badge-background);
+                color: var(--rc-color-list-badge);
                 text-align: center;
                 font-weight: bold;
 
@@ -557,11 +557,11 @@ ul.treelist {
 
             &.recent {
                 & > a {
-                    color: @color-list-recent;
+                    color: var(--rc-color-list-recent);
 
                     & > .unreadcount {
-                        background: @color-list-recent-badge-background;
-                        color: @color-list-recent-badge;
+                        background: var(--rc-color-list-recent-badge-background);
+                        color: var(--rc-color-list-recent-badge);
                     }
                 }
             }
@@ -647,14 +647,14 @@ table.fixedcopy {
             &.size,
             &.date {
                 font-size: 90%;
-                color: @color-list-secondary;
+                color: var(--rc-color-list-secondary);
             }
 
             &.fromto {
                 .overflow-ellipsis();
                 flex: 1;
                 font-size: 90%;
-                color: @color-list-secondary;
+                color: var(--rc-color-list-secondary);
                 padding-left: 1.5em;
                 padding-right: .5rem;
             }
@@ -691,14 +691,14 @@ table.fixedcopy {
     tr.flagged td.subject span.subject a,
     tr.flagged td.subject span.date,
     tr.flagged td.subject span.fromto {
-        color: @color-list-flagged;
+        color: var(--rc-color-list-flagged);
     }
 
     tr.deleted td,
     tr.deleted td.subject span.subject a,
     tr.deleted td.subject span.date,
     tr.deleted td.subject span.fromto {
-        color: @color-list-deleted;
+        color: var(--rc-color-list-deleted);
     }
 
     tr.unread td.subject span.subject {
@@ -767,7 +767,7 @@ table.fixedcopy {
 
     span.attachment span {
         &:extend(.font-icon-class);
-        color: @color-list-icon;
+        color: var(--rc-color-list-icon);
 
         &:before {
             margin: 0;
@@ -792,7 +792,7 @@ table.fixedcopy {
     tr.flaggedroot:not(:hover) span.unflagged:before {
         &:extend(.font-icon-class);
         content: @fa-var-flag;
-        color: @color-list-icon;
+        color: var(--rc-color-list-icon);
     }
 
     span.size {
@@ -875,7 +875,7 @@ html.touch {
 
     span.email {
         display: inline;
-        color: @color-list-secondary;
+        color: var(--rc-color-list-secondary);
         font-style: italic;
         margin-left: .5em;
     }
@@ -905,8 +905,8 @@ html.touch {
     padding: 0;
     margin: 0;
 
-    background-color: @color-attachmentlist-background;
-    border: 1px solid @color-attachmentlist-border;
+    background-color: var(--rc-color-attachmentlist-background);
+    border: 1px solid var(--rc-color-attachmentlist-border);
 
     &:empty {
         padding: 0;
@@ -1047,11 +1047,11 @@ html.touch {
 
         .attachment-name {
             .overflow-ellipsis();
-            color: @color-font;
+            color: var(--rc-color-font);
         }
 
         .attachment-size {
-            color: @color-list-secondary;
+            color: var(--rc-color-list-secondary);
             padding-left: .25em;
         }
     }

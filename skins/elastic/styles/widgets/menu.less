@@ -32,7 +32,7 @@
 
         &:not(.disabled):focus,
         &:not(.disabled):hover {
-            background-color: @color-toolbar-button-background-hover;
+            background-color: var(--rc-color-toolbar-button-background-hover);
         }
     }
 
@@ -43,7 +43,7 @@
         }
 
         a {
-            color: @color-toolbar-button;
+            color: var(--rc-color-toolbar-button);
             display: block;
             float: left;
             border: 0 !important;
@@ -65,7 +65,7 @@
             }
 
             &.selected {
-                color: @color-success;
+                color: var(--rc-color-success);
             }
         }
 
@@ -75,7 +75,7 @@
 
         .dropbutton {
             &:not(.disabled):hover {
-                background-color: @color-toolbar-button-background-hover;
+                background-color: var(--rc-color-toolbar-button-background-hover);
             }
 
             a.dropdown {
@@ -86,7 +86,7 @@
                 }
 
                 &:hover {
-                    background-color: hsl(from @color-toolbar-button-background-hover  h s calc(l - 5));
+                    background-color: hsl(from var(--rc-color-toolbar-button-background-hover)  h s calc(l - 5));
 		    /* less: #dfdfdf */
                 }
             }
@@ -131,7 +131,7 @@
             display: inline-block;
             min-width: 2rem !important;
             height: @layout-footer-small-height;
-            color: @color-toolbar-button;
+            color: var(--rc-color-toolbar-button);
 
             &:before {
                 margin: 0;
@@ -143,7 +143,7 @@
 
         .pagenav-text {
             .overflow-ellipsis();
-            color: @color-list-pagenav;
+            color: var(--rc-color-list-pagenav);
             flex-grow: 4;
             font-size: 80%;
         }
@@ -167,8 +167,8 @@
 
         &.pagenav-list {
             cursor: pointer;
-            background-color: @color-searchbar-background;
-            border-bottom: 1px solid @color-list-border;
+            background-color: var(--rc-color-searchbar-background);
+            border-bottom: 1px solid var(--rc-color-list-border);
 
             a {
                 flex-grow: unset;
@@ -184,7 +184,7 @@
             }
 
             &.expanded + .navlist {
-                border-bottom: 1px solid @color-layout-border;
+                border-bottom: 1px solid var(--rc-color-layout-border);
             }
         }
     }
@@ -209,7 +209,7 @@
             display: block;
             float: left;
             cursor: pointer;
-            color: @color-toolbar-button;
+            color: var(--rc-color-toolbar-button);
             background-color: transparent;
             border: 0;
             padding: 0;
@@ -241,8 +241,8 @@
                 line-height: 1.5rem !important;
                 font-size: .75rem !important;
                 padding: 0 .5rem;
-                color: @color-popover-separator;
-                background-color: @color-popover-separator-background;
+                color: var(--rc-color-popover-separator);
+                background-color: var(--rc-color-popover-separator-background);
 
                 label {
                     margin: 0; // Unsets Bootstrap label margin, bug?
@@ -268,8 +268,8 @@
                 }
 
                 &:not(.disabled):hover {
-                    color: @color-menu-hover;
-                    background-color: @color-menu-hover-background;
+                    color: var(--rc-color-menu-hover);
+                    background-color: var(--rc-color-menu-hover-background);
                 }
 
                 &[aria-haspopup] {
@@ -277,7 +277,7 @@
 
                     &:after {
                         &:extend(.font-icon-class);
-                        color: @color-black-shade-text;
+                        color: var(--rc-color-black-shade-text);
                         font-size: .9em;
                         margin: 0 0 0 .2em;
                         min-width: 1.18em;
@@ -289,12 +289,12 @@
                     }
 
                     &.dropdown:after {
-                        color: @color-list;
+                        color: var(--rc-color-list);
                         margin: 0 .6em !important;
                     }
 
                     &:hover:after {
-                        color: @color-menu-hover;
+                        color: var(--rc-color-menu-hover);
                     }
 
                     & > span {
@@ -318,16 +318,16 @@
             }
 
             &:not(.disabled):hover {
-                background-color: @color-popover-mobile-dropbutton-background;
+                background-color: var(--rc-color-popover-mobile-dropbutton-background);
             }
 
             a.dropdown {
                 width: 3.5rem;
                 padding: 0 .5em;
-                background-color: @color-popover-mobile-dropbutton-background;
+                background-color: var(--rc-color-popover-mobile-dropbutton-background);
 
                 &:hover {
-                    background-color: @color-menu-hover-background;
+                    background-color: var(--rc-color-menu-hover-background);
                 }
 
                 // Note: :before icon is replaced with :after icon by a[aria-haspopup] above
@@ -353,7 +353,7 @@
     .header a.button.icon {
         &:not(.disabled):focus,
         &:not(.disabled):hover {
-            background-color: @color-toolbar-button-background-hover;
+            background-color: var(--rc-color-toolbar-button-background-hover);
             outline: 0;
         }
 
@@ -382,7 +382,7 @@
     }
 
     .menu.listing a {
-        color: @color-font;
+        color: var(--rc-color-font);
     }
 }
 
@@ -716,8 +716,8 @@ a.toolbar-button {
     height: @layout-searchbar-height;
     min-height: @layout-searchbar-height; // because of Flexbox
     line-height: @layout-searchbar-height;
-    background-color: @color-searchbar-background;
-    border-bottom: 1px solid @color-list-border;
+    background-color: var(--rc-color-searchbar-background);
+    border-bottom: 1px solid var(--rc-color-list-border);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -731,7 +731,7 @@ a.toolbar-button {
             &:extend(.font-icon-class);
             content: @fa-var-search;
             height: @layout-searchbar-height;
-            color: @color-list-pagenav;
+            color: var(--rc-color-list-pagenav);
             margin: 0 0 0 .75rem;
         }
     }
@@ -750,7 +750,7 @@ a.toolbar-button {
     }
 
     a {
-        color: @color-toolbar-button;
+        color: var(--rc-color-toolbar-button);
 
         &:before {
             &:extend(.font-icon-class);
@@ -778,7 +778,7 @@ a.toolbar-button {
         }
 
         &.selected {
-            color: @color-success;
+            color: var(--rc-color-success);
         }
     }
 
@@ -849,8 +849,8 @@ a.toolbar-button {
             text-align: left;
             line-height: @layout-touch-menu-record-height;
             height: @layout-touch-menu-record-height;
-            border-bottom: 1px solid @color-list-border !important;
-            color: @color-list;
+            border-bottom: 1px solid var(--rc-color-list-border) !important;
+            color: var(--rc-color-list);
             font-size: 1.2rem;
 
             &:before {
@@ -867,23 +867,23 @@ a.toolbar-button {
 
     @media screen and (min-width: (@screen-width-xs + 1px)) {
         a {
-            color: @color-taskmenu-button;
+            color: var(--rc-color-taskmenu-button);
             padding: .45rem 0;
             min-width: unset;
 
             &.selected {
-                color: @color-taskmenu-button-selected;
-                background: @color-taskmenu-button-selected-background;
+                color: var(--rc-color-taskmenu-button-selected);
+                background: var(--rc-color-taskmenu-button-selected-background);
 
                 &:hover {
-                    color: @color-taskmenu-button-selected-hover;
-                    background: @color-taskmenu-button-background-hover;
+                    color: var(--rc-color-taskmenu-button-selected-hover);
+                    background: var(--rc-color-taskmenu-button-background-hover);
                 }
             }
 
             &:hover {
-                color: @color-taskmenu-button-hover;
-                background: @color-taskmenu-button-background-hover;
+                color: var(--rc-color-taskmenu-button-hover);
+                background: var(--rc-color-taskmenu-button-background-hover);
             }
         }
 
@@ -891,26 +891,26 @@ a.toolbar-button {
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: @color-taskmenu-background;
+            background-color: var(--rc-color-taskmenu-background);
         }
 
         .action-buttons {
             a {
-                color: @color-taskmenu-button-action;
-                background: @color-taskmenu-button-action-background;
+                color: var(--rc-color-taskmenu-button-action);
+                background: var(--rc-color-taskmenu-button-action-background);
 
                 &:hover {
-                    color: @color-taskmenu-button-action-hover;
-                    background: @color-taskmenu-button-action-background-hover;
+                    color: var(--rc-color-taskmenu-button-action-hover);
+                    background: var(--rc-color-taskmenu-button-action-background-hover);
                 }
             }
         }
 
         a.logout {
-            color: @color-taskmenu-button-logout !important;
+            color: var(--rc-color-taskmenu-button-logout) !important;
 
             &:hover {
-                color: @color-taskmenu-button-logout-hover !important;
+                color: var(--rc-color-taskmenu-button-logout-hover) !important;
             }
         }
     }
@@ -942,7 +942,7 @@ a.toolbar-button {
             }
 
             &:focus {
-                background-color: @color-taskmenu-button-selected-background;
+                background-color: var(--rc-color-taskmenu-button-selected-background);
             }
         }
 

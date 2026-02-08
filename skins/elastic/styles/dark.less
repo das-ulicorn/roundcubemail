@@ -12,21 +12,21 @@
 @import (reference) "variables";
 
 html.dark-mode {
-    scrollbar-color: @color-dark-scrollbar-thumb @color-dark-scrollbar-track;
+    scrollbar-color: var(--rc-color-dark-scrollbar-thumb) var(--rc-color-dark-scrollbar-track);
 
     &:not(.touch) {
         ::-webkit-scrollbar-track {
-            background-color: @color-dark-scrollbar-track;
+            background-color: var(--rc-color-dark-scrollbar-track);
         }
 
         ::-webkit-scrollbar-thumb {
-            background-color: @color-dark-scrollbar-thumb;
+            background-color: var(--rc-color-dark-scrollbar-thumb);
         }
     }
 
     body {
-        color: @color-dark-font;
-        background-color: @color-dark-background;
+        color: var(--rc-color-dark-font);
+        background-color: var(--rc-color-dark-background);
     }
 
     #logo {
@@ -45,7 +45,7 @@ html.dark-mode {
     .menu.pagenav.pagenav-list + .navlist,
     .menu.pagenav.pagenav-list.expanded + .navlist {
         background-color: transparent;
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
     }
 
     #layout > div > .footer {
@@ -57,13 +57,13 @@ html.dark-mode {
         color: unset;
 
         a.button {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
     }
 
     #layout-menu {
         background: unset;
-        border-right: 1px solid @color-dark-border;
+        border-right: 1px solid var(--rc-color-dark-border);
 
         .popover-header,
         .special-buttons {
@@ -74,22 +74,22 @@ html.dark-mode {
             border-left: 0;
 
             .popover-header {
-                border-bottom: 1px solid @color-dark-border;
+                border-bottom: 1px solid var(--rc-color-dark-border);
             }
         }
 
         .special-buttons a:not(:focus) {
-            background: @color-dark-background;
+            background: var(--rc-color-dark-background);
         }
     }
 
     &.layout-phone #layout-menu {
-        background: @color-dark-popover-background;
+        background: var(--rc-color-dark-popover-background);
     }
 
     .searchbar {
         background-color: transparent;
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
 
         form:before,
         a,
@@ -98,77 +98,77 @@ html.dark-mode {
         }
 
         a.selected {
-            color: @color-success;
+            color: var(--rc-color-success);
         }
     }
 
     #messagestack {
         div {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
 
             i.icon:before {
-                color: @color-dark-font;
+                color: var(--rc-color-dark-font);
             }
         }
     }
 
     .ui.alert.boxinformation,
     #messagestack .alert-info {
-        background-color: @color-dark-message-information;
+        background-color: var(--rc-color-dark-message-information);
     }
 
     .ui.alert.boxerror,
     #messagestack .alert-danger {
-        background-color: @color-dark-message-error;
+        background-color: var(--rc-color-dark-message-error);
     }
 
     .ui.alert.boxwarning,
     #messagestack .alert-warning {
-        background-color: @color-dark-message-warning;
+        background-color: var(--rc-color-dark-message-warning);
     }
 
     .ui.alert.boxconfirmation,
     #messagestack .alert-success {
-        background-color: @color-dark-message-success;
+        background-color: var(--rc-color-dark-message-success);
     }
 
     #messagestack .loading {
-        background-color: @color-dark-message-loading;
+        background-color: var(--rc-color-dark-message-loading);
     }
 
     .ui.alert.boxinformation,
     .ui.alert.boxerror,
     .ui.alert.boxwarning,
     .ui.alert.boxconfirmation {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
         i.icon:before {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
     }
 
     .ui.alert a:not(.btn) {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
         text-decoration: underline;
     }
 
     .iframe-loader {
-        background-color: rgb(from @color-dark-background  r g b / calc( alpha - 0.10));
+        background-color: rgb(from var(--rc-color-dark-background)  r g b / calc( alpha - 0.10));
 	/* less: rgba(33, 41, 44, 0.9); */
 
         .spinner-border {
-            color: hsl(from @color-dark-font h s calc(l - 25));
+            color: hsl(from var(--rc-color-dark-font) h s calc(l - 25));
 	    /* less: #7d989c */
-            border-color: currentColor hsl(from @color-dark-font h s calc(l - 50)) currentColor currentColor;
+            border-color: currentColor hsl(from var(--rc-color-dark-font) h s calc(l - 50)) currentColor currentColor;
 	    /* less: #425457 */
         }
     }
 
     #taskmenu a,
     .menu.toolbar a {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
 
         &.selected {
-            background-color: @color-dark-list-selected-background;
+            background-color: var(--rc-color-dark-list-selected-background);
         }
     }
 
@@ -181,12 +181,12 @@ html.dark-mode {
 
     #taskmenu {
         .action-buttons a {
-            color: @color-main;
+            color: var(--rc-color-main);
         }
 
         a {
             @media screen and (max-width: @screen-width-xs) {
-                border-color: @color-dark-list-border !important;
+                border-color: var(--rc-color-dark-list-border) !important;
 
                 &.selected {
                     background: transparent;
@@ -206,25 +206,25 @@ html.dark-mode {
     &.layout-small,
     &.layout-phone {
         .popover {
-            border-left: 1px solid @color-dark-border;
+            border-left: 1px solid var(--rc-color-dark-border);
 
             .menu .dropbutton a.dropdown {
                 background: transparent;
             }
 
             &:not(.select-menu) .listing li:last-child {
-                border-color: @color-dark-list-border;
+                border-color: var(--rc-color-dark-list-border);
             }
         }
 
         .popover-header {
-            background: @color-dark-popover-background;
-            border-bottom: 1px solid @color-dark-border;
+            background: var(--rc-color-dark-popover-background);
+            border-bottom: 1px solid var(--rc-color-dark-border);
             color: unset;
         }
 
         .popover-overlay {
-            background: @color-dark-dialog-overlay-background;
+            background: var(--rc-color-dark-dialog-overlay-background);
         }
     }
 
@@ -235,16 +235,16 @@ html.dark-mode {
     .menu.toolbar .dropbutton:not(.disabled):hover,
     .menu a:not(.disabled):focus,
     .menu a:not(.disabled):hover {
-        background-color: @color-dark-list-selected-background;
+        background-color: var(--rc-color-dark-list-selected-background);
     }
 
     .menu.toolbar a.selected {
-        color: @color-success;
+        color: var(--rc-color-success);
         background: transparent;
     }
 
     .menu.toolbar .dropbutton a.dropdown:hover {
-        background-color: hsl(from @color-dark-list-selected-background h s calc(l + 5));
+        background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l + 5));
 	/* less: #425358 */
     }
 
@@ -256,68 +256,68 @@ html.dark-mode {
     .listing tbody td,
     .listing tbody td a,
     .listing li a {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
     }
 
     .listing li ul,
     .listing tbody td,
     .listing li {
-        border-color: @color-dark-list-border;
+        border-color: var(--rc-color-dark-list-border);
     }
 
     .listing li.selected,
     .listing li.selected > a,
     .listing li.selected > div > a, // this is used e.g. by kolab_addressbook
     .listing tr.selected td {
-        color: @color-dark-list-selected;
-        background-color: @color-dark-list-selected-background;
+        color: var(--rc-color-dark-list-selected);
+        background-color: var(--rc-color-dark-list-selected-background);
     }
 
     .listing li.selected ul {
-        background-color: @color-dark-background;
+        background-color: var(--rc-color-dark-background);
 
         div.treetoggle {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
     }
 
     .listing {
         li.disabled,
         tr.disabled td {
-            color: @color-dark-list-deleted;
+            color: var(--rc-color-dark-list-deleted);
         }
     }
 
     .listing li.droptarget > a,
     .listing tr.droptarget > td {
-        background-color: @color-dark-list-droptarget-background;
+        background-color: var(--rc-color-dark-list-droptarget-background);
     }
 
     .messagelist {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
 
         tr:not(.flagged):not(.deleted) {
             td.subject {
                 span.size,
                 span.date,
                 span.fromto {
-                    color: @color-dark-hint;
+                    color: var(--rc-color-dark-hint);
                 }
 
                 span.msgicon.status {
-                    color: @color-dark-font;
+                    color: var(--rc-color-dark-font);
                 }
             }
 
             span.flag {
-                color: @color-dark-font;
+                color: var(--rc-color-dark-font);
             }
 
             &.selected {
                 td.subject {
                     a,
                     span.msgicon.status {
-                        color: @color-dark-list-selected;
+                        color: var(--rc-color-dark-list-selected);
                     }
                 }
             }
@@ -326,7 +326,7 @@ html.dark-mode {
         tr.flagged:not(.deleted) {
             td,
             span.attachment span {
-                color: @color-list-flagged;
+                color: var(--rc-color-list-flagged);
             }
         }
 
@@ -338,36 +338,36 @@ html.dark-mode {
             td.subject span.subject a,
             td.subject span.date,
             td.subject span.fromto {
-                color: @color-dark-list-deleted;
+                color: var(--rc-color-dark-list-deleted);
             }
         }
 
         span.attachment span {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
         }
     }
 
     .folderlist li.mailbox .unreadcount {
-        background-color: @color-dark-list-badge-background;
-        color: @color-dark-list-badge;
+        background-color: var(--rc-color-dark-list-badge-background);
+        color: var(--rc-color-dark-list-badge);
         font-weight: normal;
     }
 
     .attachmentslist {
-        background-color: @color-dark-list-selected-background;
+        background-color: var(--rc-color-dark-list-selected-background);
         border: 0;
 
         a {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
 
         li {
             .attachment-name {
-                color: @color-dark-font;
+                color: var(--rc-color-dark-font);
             }
 
             .attachment-size {
-                color: @color-dark-hint;
+                color: var(--rc-color-dark-hint);
             }
         }
     }
@@ -376,11 +376,11 @@ html.dark-mode {
     // ---------------------------------
 
     .btn {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
 
         &:focus,
         &:hover {
-            color: @color-dark-btn;
+            color: var(--rc-color-dark-btn);
         }
 
         &:disabled {
@@ -389,62 +389,62 @@ html.dark-mode {
     }
 
     .btn-primary {
-        background-color: @color-dark-btn-primary-background;
-        color: @color-dark-btn;
+        background-color: var(--rc-color-dark-btn-primary-background);
+        color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from @color-dark-btn-primary-background h s calc(l + 5));
+            background-color: hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5));
 	    /* less: #007bb7 */
         }
     }
 
     .btn-secondary {
-        background-color: @color-dark-btn-secondary-background;
-        color: @color-dark-btn;
+        background-color: var(--rc-color-dark-btn-secondary-background);
+        color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from @color-dark-btn-secondary-background h s calc(l + 5));
+            background-color: hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5));
 	    /* less: #586e75 */
         }
     }
 
     .btn-danger {
-        background-color: @color-dark-btn-danger-background;
-        color: @color-dark-btn;
+        background-color: var(--rc-color-dark-btn-danger-background);
+        color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from @color-dark-btn-danger-background h s calc(l + 5));
+            background-color: hsl(from var(--rc-color-dark-btn-danger-background) h s calc(l + 5));
 	    /* less: #ac3937 */
         }
     }
 
     .floating-action-buttons a.button {
         box-shadow: none;
-        background: @color-dark-main;
+        background: var(--rc-color-dark-main);
     }
 
     .custom-file-label,
     .form-control {
-        background-color: @color-dark-input-background;
-        color: @color-dark-input;
+        background-color: var(--rc-color-dark-input-background);
+        color: var(--rc-color-dark-input);
 
         &:not(.is-invalid) {
-            border-color: @color-dark-input-border;
+            border-color: var(--rc-color-dark-input-border);
         }
 
         &:focus {
-            background-color: @color-dark-input-background-focus;
+            background-color: var(--rc-color-dark-input-background-focus);
 
             &:not(.is-invalid) {
-                color: @color-dark-input-focus !important;
-                border-color: @color-dark-input-border-focus;
+                color: var(--rc-color-dark-input-focus) !important;
+                border-color: var(--rc-color-dark-input-border-focus);
             }
         }
     }
 
     .custom-file-label::after {
-        color: @color-dark-input;
-        background-color: @color-dark-input-addon-background;
+        color: var(--rc-color-dark-input);
+        background-color: var(--rc-color-dark-input-addon-background);
     }
 
     .custom-select {
@@ -454,11 +454,11 @@ html.dark-mode {
 
     .custom-switch {
         .custom-control-label::before {
-            background-color: @color-dark-checkbox;
+            background-color: var(--rc-color-dark-checkbox);
         }
 
         .custom-control-label::after {
-            background-color: @color-dark-font;
+            background-color: var(--rc-color-dark-font);
         }
 
         .custom-control-input:disabled ~ .custom-control-label {
@@ -467,11 +467,11 @@ html.dark-mode {
 
         .custom-control-input:checked {
             & ~ .custom-control-label::before {
-                background-color: @color-dark-checkbox-checked;
+                background-color: var(--rc-color-dark-checkbox-checked);
             }
 
             & ~ .custom-control-label::after {
-                background-color: @color-dark-font;
+                background-color: var(--rc-color-dark-font);
             }
         }
     }
@@ -482,22 +482,22 @@ html.dark-mode {
     }
 
     .multi-input:not(.is-invalid) > .content {
-        border-color: @color-dark-input-border;
+        border-color: var(--rc-color-dark-input-border);
 
         &.focused {
-            border-color: @color-dark-input-border-focus;
+            border-color: var(--rc-color-dark-input-border-focus);
         }
     }
 
     .input-group-text {
-        color: @color-dark-input;
-        background-color: @color-dark-input-addon-background;
-        border-color: @color-dark-input-border;
+        color: var(--rc-color-dark-input);
+        background-color: var(--rc-color-dark-input-addon-background);
+        border-color: var(--rc-color-dark-input-border);
     }
 
     .input-group a:focus {
-        border-color: @color-dark-input-border-focus;
-        box-shadow: 0 0 0 .2rem @color-input-border-focus-shadow;
+        border-color: var(--rc-color-dark-input-border-focus);
+        box-shadow: 0 0 0 .2rem var(--rc-color-input-border-focus-shadow);
         z-index: 1;
     }
 
@@ -507,24 +507,24 @@ html.dark-mode {
 
     .recipient-input {
         &.focus {
-            color: @color-dark-input-focus;
-            background-color: @color-dark-input-background-focus;
-            border-color: @color-dark-input-border-focus;
+            color: var(--rc-color-dark-input-focus);
+            background-color: var(--rc-color-dark-input-background-focus);
+            border-color: var(--rc-color-dark-input-border-focus);
         }
 
         a.button.icon,
         input {
-            color: @color-dark-input;
+            color: var(--rc-color-dark-input);
         }
 
         .recipient {
-            background-color: @color-dark-input-addon-background;
-            border-color: @color-dark-input-border;
+            background-color: var(--rc-color-dark-input-addon-background);
+            border-color: var(--rc-color-dark-input-border);
         }
     }
 
     .file-upload {
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
 
         &:after {
             mix-blend-mode: soft-light;
@@ -532,12 +532,12 @@ html.dark-mode {
 
         &.droptarget {
             &.active {
-                border-color: @color-dark-font;
+                border-color: var(--rc-color-dark-font);
             }
 
             &.hover {
-                border-color: @color-dark-font;
-                background-color: @color-dark-list-selected-background;
+                border-color: var(--rc-color-dark-font);
+                background-color: var(--rc-color-dark-list-selected-background);
             }
         }
 
@@ -547,24 +547,24 @@ html.dark-mode {
     }
 
     .image-upload {
-        background-color: @color-dark-list-selected-background;
+        background-color: var(--rc-color-dark-list-selected-background);
 
         a.button {
-            background-color: rgb(from @color-dark-background  r g b / calc( alpha - 0.75));
+            background-color: rgb(from var(--rc-color-dark-background)  r g b / calc( alpha - 0.75));
 	    /* less: #21292c */
         }
     }
 
     .formcontent.raweditor {
         .CodeMirror {
-            color: @color-dark-input;
-            background-color: @color-dark-input-background;
-            border-color: @color-dark-input-border;
+            color: var(--rc-color-dark-input);
+            background-color: var(--rc-color-dark-input-background);
+            border-color: var(--rc-color-dark-input-border);
         }
 
         .CodeMirror-focused {
-            background-color: @color-dark-input-background-focus;
-            border-color: @color-dark-input-border-focus;
+            background-color: var(--rc-color-dark-input-background-focus);
+            border-color: var(--rc-color-dark-input-border-focus);
         }
     }
 
@@ -572,21 +572,21 @@ html.dark-mode {
     .CodeMirror-line::selection,
     .CodeMirror-line > span::selection,
     .CodeMirror-line > span > span::selection {
-        background: @color-dark-list-selected-background;
+        background: var(--rc-color-dark-list-selected-background);
     }
 
     .CodeMirror-gutters {
-        background-color: hsl(from @color-dark-list-selected-background h s calc(l - 10));
+        background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l - 10));
 	/* less: #212a2c */
         border: 0;
     }
 
     .CodeMirror-activeline-background {
-        background: @color-dark-list-selected-background;
+        background: var(--rc-color-dark-list-selected-background);
     }
 
     .skinselection .skinthumbnail {
-        border-color: @color-dark-input-border;
+        border-color: var(--rc-color-dark-input-border);
         background: transparent;
     }
 
@@ -596,15 +596,15 @@ html.dark-mode {
 
     .html-editor {
         .editor-toolbar {
-            background-color: @color-dark-input-addon-background;
-            border-color: @color-dark-input-border;
+            background-color: var(--rc-color-dark-input-addon-background);
+            border-color: var(--rc-color-dark-input-border);
 
             .mce-i-html {
                 color: unset;
 
                 &:hover,
                 &:focus {
-                    background-color: @color-dark-input-addon-background-focus;
+                    background-color: var(--rc-color-dark-input-addon-background-focus);
                     border-color: transparent;
                 }
             }
@@ -613,58 +613,58 @@ html.dark-mode {
 
     .tox {
         &.tox-tinymce {
-            border-color: @color-dark-input-border;
+            border-color: var(--rc-color-dark-input-border);
         }
 
         .tox-toolbar {
-            background-color: @color-dark-input-addon-background;
-            border-color: @color-dark-input-border;
+            background-color: var(--rc-color-dark-input-addon-background);
+            border-color: var(--rc-color-dark-input-border);
         }
 
         .tox-toolbar-overlord > div {
             @color-overlord-border: escape(~"@{color-dark-input-border}");
-            background: url("data:image/svg+xml,%3Csvg height='33px' viewBox='0 0 40 33px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='32px' width='100' height='1' fill='@{color-overlord-border}'/%3E%3C/svg%3E") @color-dark-input-addon-background;
+            background: url("data:image/svg+xml,%3Csvg height='33px' viewBox='0 0 40 33px' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='32px' width='100' height='1' fill='@{color-overlord-border}'/%3E%3C/svg%3E") var(--rc-color-dark-input-addon-background);
         }
 
         .tox-pop.tox-pop--top {
             &:before,
             &:after {
-                border-bottom-color: @color-dark-popover-border;
+                border-bottom-color: var(--rc-color-dark-popover-border);
             }
         }
 
         .tox-pop__dialog {
             box-shadow: none;
-            border-color: @color-dark-popover-border;
+            border-color: var(--rc-color-dark-popover-border);
         }
 
         .tox-tbtn,
         .tox-split-button,
         .tox-swatches__picker-btn {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
 
             svg {
-                fill: @color-dark-font !important;
+                fill: var(--rc-color-dark-font) !important;
             }
 
             &:hover,
             &:focus {
-                color: @color-dark-font;
-                background: @color-dark-input-addon-background-focus;
+                color: var(--rc-color-dark-font);
+                background: var(--rc-color-dark-input-addon-background-focus);
                 box-shadow: none;
             }
         }
 
         .tox-tbtn--enabled {
-            background: @color-dark-input-addon-background-focus;
+            background: var(--rc-color-dark-input-addon-background-focus);
         }
 
         .tox-button--naked {
             &:focus:not(:disabled),
             &.tox-button--icon:hover:not(:disabled) {
-                color: hsl(from @color-dark-font h s calc(l + 5));
+                color: hsl(from var(--rc-color-dark-font) h s calc(l + 5));
 		/* less: #b7c5c8 */
-                background-color: @color-dark-input-addon-background-focus;
+                background-color: var(--rc-color-dark-input-addon-background-focus);
                 border-color: transparent;
             }
 
@@ -681,20 +681,20 @@ html.dark-mode {
         .tox-selectfield {
             select {
                 background: transparent;
-                color: @color-dark-input;
+                color: var(--rc-color-dark-input);
             }
 
             svg {
-                fill: @color-dark-input;
+                fill: var(--rc-color-dark-input);
             }
         }
 
         .tox-color-input span::before {
-            background-color: @color-dark-font;
+            background-color: var(--rc-color-dark-font);
         }
 
         .tox-toolbar__group:not(:last-of-type) {
-            border-color: @color-dark-input-border;
+            border-color: var(--rc-color-dark-input-border);
         }
 
         .tox-dialog,
@@ -702,9 +702,9 @@ html.dark-mode {
         .tox-dialog__body,
         .tox-dialog__footer,
         .tox-dialog__title {
-            color: @color-dark-font;
-            border-color: @color-dark-border;
-            background-color: @color-dark-background;
+            color: var(--rc-color-dark-font);
+            border-color: var(--rc-color-dark-border);
+            background-color: var(--rc-color-dark-background);
         }
 
         .tox-textfield,
@@ -714,40 +714,40 @@ html.dark-mode {
         .tox-button--naked,
         .tox-dialog__header .tox-button,
         .tox-insert-table-picker__label {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
 
         .tox-dialog__footer .tox-button {
-            background-color: @color-dark-btn-primary-background;
-            color: @color-dark-btn;
+            background-color: var(--rc-color-dark-btn-primary-background);
+            color: var(--rc-color-dark-btn);
 
             &:disabled {
                 opacity: .5;
             }
 
             @media screen and (max-width: @screen-width-xs) {
-                color: @color-dark-font !important;
+                color: var(--rc-color-dark-font) !important;
             }
 
             &:focus:not(:disabled) {
-                background-color: @color-dark-btn-primary-background;
+                background-color: var(--rc-color-dark-btn-primary-background);
             }
 
             &:hover:not(:disabled) {
-                background-color: hsl(from @color-dark-btn-primary-background h s calc(l + 5));
+                background-color: hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5));
 		/* less: #007bb7 */
             }
 
             &.tox-button--secondary {
-                background-color: @color-dark-btn-secondary-background;
-                color: @color-dark-btn;
+                background-color: var(--rc-color-dark-btn-secondary-background);
+                color: var(--rc-color-dark-btn);
 
                 &:focus:not(:disabled) {
-                    background-color: @color-dark-btn-secondary-background;
+                    background-color: var(--rc-color-dark-btn-secondary-background);
                 }
 
                 &:hover:not(:disabled) {
-                    background-color: hsl(from @color-dark-btn-secondary-background h s calc(l + 5%);
+                    background-color: hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5%);
                 	/* less: #586e75 */
 		}
 
@@ -755,28 +755,28 @@ html.dark-mode {
         }
 
         .tox-dialog__body-nav-item--active {
-            color: @color-main;
+            color: var(--rc-color-main);
         }
 
         .tox-dialog-wrap__backdrop {
-            background-color: @color-dark-dialog-overlay-background;
+            background-color: var(--rc-color-dark-dialog-overlay-background);
         }
 
         .tox-menu {
-            background-color: @color-dark-popover-background;
-            border-color: @color-dark-popover-border;
+            background-color: var(--rc-color-dark-popover-background);
+            border-color: var(--rc-color-dark-popover-border);
             box-shadow: none;
         }
 
         .tox-collection__item-caret svg {
-            fill: @color-dark-font;
+            fill: var(--rc-color-dark-font);
         }
 
         .tox-collection__item {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
 
             &:not(:last-child) {
-                border-bottom: 1px solid @color-dark-list-border;
+                border-bottom: 1px solid var(--rc-color-dark-list-border);
             }
         }
 
@@ -786,13 +786,13 @@ html.dark-mode {
 
         .tox-collection__item--active,
         .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
-            color: @color-dark-font;
-            background-color: @color-dark-list-selected-background;
+            color: var(--rc-color-dark-font);
+            background-color: var(--rc-color-dark-list-selected-background);
         }
 
         .tox-collection__item--enabled {
-            color: @color-dark-list-selected;
-            background-color: @color-dark-list-selected-background;
+            color: var(--rc-color-dark-list-selected);
+            background-color: var(--rc-color-dark-list-selected-background);
         }
     }
 
@@ -801,53 +801,53 @@ html.dark-mode {
     // ---------------------------------
 
     .message-part {
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
 
         blockquote {
-            background-color: @color-dark-background;
-            border-color: @color-dark-blockquote-0-border;
-            color: @color-dark-blockquote-0;
+            background-color: var(--rc-color-dark-background);
+            border-color: var(--rc-color-dark-blockquote-)0-border;
+            color: var(--rc-color-dark-blockquote-)0;
 
             span.blockquote-link {
                 color: currentColor;
-                background: @color-dark-background;
+                background: var(--rc-color-dark-background);
                 border-color: currentColor;
             }
 
             blockquote {
-                color: @color-dark-blockquote-1;
-                border-color: @color-dark-blockquote-1-border;
+                color: var(--rc-color-dark-blockquote-)1;
+                border-color: var(--rc-color-dark-blockquote-)1-border;
 
                 blockquote {
-                    color: @color-dark-blockquote-2;
-                    border-color: @color-dark-blockquote-2-border;
+                    color: var(--rc-color-dark-blockquote-)2;
+                    border-color: var(--rc-color-dark-blockquote-)2-border;
                 }
             }
         }
 
         span.sig {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
         }
     }
 
     .message-htmlpart {
         background-color: white;
-        color: @color-font;
+        color: var(--rc-color-font);
         padding: 0;
         margin-top: .5rem;
     }
 
     #message-header .header-headers .header-title {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
         font-weight: normal;
     }
 
     .message-partheaders {
-        background-color: @color-dark-list-selected-background;
+        background-color: var(--rc-color-dark-list-selected-background);
         border: 0;
 
         table.headers-table {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
 
             * {
                 font-weight: normal;
@@ -857,19 +857,19 @@ html.dark-mode {
 
     // this is when image thumbnails are enabled
     p.image-attachment {
-        border-color: @color-dark-border;
-        background-color: @color-dark-list-selected-background;
+        border-color: var(--rc-color-dark-border);
+        background-color: var(--rc-color-dark-list-selected-background);
 
         span {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
         }
     }
 
     // this is when image thumbnails are disabled
     fieldset.image-attachment {
         legend {
-            color: @color-dark-hint;
-            border-color: @color-dark-border;
+            color: var(--rc-color-dark-hint);
+            border-color: var(--rc-color-dark-border);
         }
     }
 
@@ -883,35 +883,35 @@ html.dark-mode {
     // ----------------------------------
 
     .ui-widget {
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
     }
 
     .ui-widget-overlay {
-        background-color: @color-dark-dialog-overlay-background;
+        background-color: var(--rc-color-dark-dialog-overlay-background);
     }
 
     .ui-widget-header,
     .ui-widget-content {
-        background-color: @color-dark-background;
+        background-color: var(--rc-color-dark-background);
     }
 
     .ui-dialog {
         .ui-dialog-titlebar {
-            border-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
         }
 
         .ui-dialog-title,
         .ui-dialog-titlebar-close {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
             background: transparent;
         }
 
         .ui-dialog-buttonpane {
-            border-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
 
             .ui-dialog-buttonset {
                 a.btn-link {
-                    color: @color-dark-font;
+                    color: var(--rc-color-dark-font);
 
                     &:focus {
                         background: transparent;
@@ -921,7 +921,7 @@ html.dark-mode {
                 @media screen and (max-width: @screen-width-xs) {
                     button.btn-primary:not(.btn-danger),
                     button.btn-secondary {
-                        color: @color-dark-font;
+                        color: var(--rc-color-dark-font);
                     }
                 }
             }
@@ -930,11 +930,11 @@ html.dark-mode {
 
     .ui-datepicker {
         .ui-datepicker-header {
-            border-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
         }
 
         th {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
             font-size: 80%;
             font-weight: normal;
         }
@@ -943,39 +943,39 @@ html.dark-mode {
         .ui-datepicker-next,
         .ui-state-default,
         &.ui-widget-content .ui-state-default {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
         }
 
         .ui-state-highlight,
         &.ui-widget-content .ui-state-highlight {
-            color: @color-main;
-            background-color: @color-dark-list-selected-background;
+            color: var(--rc-color-main);
+            background-color: var(--rc-color-dark-list-selected-background);
         }
 
         .ui-datepicker-days-cell-over a {
-            background-color: hsl(from @color-dark-list-selected-background h s calc(l +  10));
+            background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l +  10));
 	    /* less: #4d6066 */
         }
     }
 
     .ui-menu {
-        background-color: @color-dark-popover-background;
-        border-color: @color-dark-popover-border;
+        background-color: var(--rc-color-dark-popover-background);
+        border-color: var(--rc-color-dark-popover-border);
         box-shadow: none;
 
         .ui-menu-item {
-            border-bottom: 1px solid @color-dark-list-border;
+            border-bottom: 1px solid var(--rc-color-dark-list-border);
         }
 
         .ui-state-active {
-            background-color: @color-dark-list-selected-background !important;
+            background-color: var(--rc-color-dark-list-selected-background) !important;
         }
     }
 
     .minicolors-panel {
         box-shadow: none;
-        border-color: @color-dark-border;
-        background: @color-dark-popover-background;
+        border-color: var(--rc-color-dark-border);
+        background: var(--rc-color-dark-popover-background);
     }
 
     // ---------------------------------
@@ -992,56 +992,56 @@ html.dark-mode {
     #contacthead.readonly .source.row,
     .formcontent .hint {
         font-weight: normal;
-        color: @color-dark-hint;
+        color: var(--rc-color-dark-hint);
     }
 
     .popover {
-        background-color: @color-dark-popover-background;
-        border-color: @color-dark-popover-border;
+        background-color: var(--rc-color-dark-popover-background);
+        border-color: var(--rc-color-dark-popover-border);
         box-shadow: none;
 
         .menu li.separator {
             background-color: transparent;
-            color: hsl(from @color-dark-font h s calc(l - 20));
+            color: hsl(from var(--rc-color-dark-font) h s calc(l - 20));
 	    /* less: #8ba3a7 */
         }
 
         .menu ul + li.separator {
-            border-top: 1px solid @color-dark-list-border;
+            border-top: 1px solid var(--rc-color-dark-list-border);
         }
     }
 
     .popover-body {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
     }
 
     .bs-popover-auto[x-placement^="right"] > .arrow::after,
     .bs-popover-right > .arrow::after {
-        border-right-color: @color-dark-popover-border;
+        border-right-color: var(--rc-color-dark-popover-border);
     }
 
     .bs-popover-auto[x-placement^="left"] > .arrow::after,
     .bs-popover-left > .arrow::after {
-        border-left-color: @color-dark-popover-border;
+        border-left-color: var(--rc-color-dark-popover-border);
     }
 
     .bs-popover-auto[x-placement^="top"] > .arrow::after,
     .bs-popover-top > .arrow::after {
-        border-top-color: @color-dark-popover-border;
+        border-top-color: var(--rc-color-dark-popover-border);
     }
 
     .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
     .bs-popover-bottom > .arrow::after {
-        border-bottom-color: @color-dark-popover-border;
+        border-bottom-color: var(--rc-color-dark-popover-border);
     }
 
     .listing-hover-menu {
-        background-color: @color-dark-popover-background;
-        border-color: @color-dark-border;
+        background-color: var(--rc-color-dark-popover-background);
+        border-color: var(--rc-color-dark-border);
         box-shadow: 0 0 5px black;
 
         a.button {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
 
             &:hover {
                 background: transparent;
@@ -1049,96 +1049,96 @@ html.dark-mode {
         }
 
         span.txt {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
         }
     }
 
     .nav-tabs {
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
 
         .nav-link {
-            color: @color-dark-font;
+            color: var(--rc-color-dark-font);
             border-color: transparent;
-            border-bottom-color: @color-dark-border;
+            border-bottom-color: var(--rc-color-dark-border);
         }
 
         .nav-link:hover {
-            background: @color-dark-background;
-            border-color: @color-dark-border;
-            color: @color-dark-font;
+            background: var(--rc-color-dark-background);
+            border-color: var(--rc-color-dark-border);
+            color: var(--rc-color-dark-font);
         }
 
         .nav-link.active {
-            background: @color-dark-background;
-            border-color: @color-dark-border;
+            background: var(--rc-color-dark-background);
+            border-color: var(--rc-color-dark-border);
             border-bottom-color: transparent;
             color: #fff;
         }
     }
 
     .table {
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
 
         td,
         th,
         thead th {
-            border-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
         }
     }
 
     .table-widget {
-        border-color: @color-dark-border;
+        border-color: var(--rc-color-dark-border);
 
         & > .footer {
-            border-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
         }
 
         // Options table is a table with first column for identifier/description
         // and other columns for a state flag. E.g. ACL table
         table.options-table {
             tr:last-child td {
-                border-color: @color-dark-border;
+                border-color: var(--rc-color-dark-border);
             }
 
             tr.selected td {
-                background-color: @color-dark-list-selected-background;
-                color: @color-dark-font;
+                background-color: var(--rc-color-dark-list-selected-background);
+                color: var(--rc-color-dark-font);
             }
         }
     }
 
     #rcmdraglayer {
-        background-color: @color-dark-popover-background;
-        border: 1px solid @color-dark-popover-border;
+        background-color: var(--rc-color-dark-popover-background);
+        border: 1px solid var(--rc-color-dark-popover-border);
         box-shadow: none;
-        color: @color-dark-font;
+        color: var(--rc-color-dark-font);
     }
 
     .quota-widget {
         color: unset;
 
         .bar {
-            border-color: @color-dark-border;
-            background-color: @color-dark-border;
+            border-color: var(--rc-color-dark-border);
+            background-color: var(--rc-color-dark-border);
         }
     }
 
     .quota-info {
         .root {
-            color: @color-dark-hint;
+            color: var(--rc-color-dark-hint);
             background-color: transparent;
         }
     }
 
     img.contactphoto,
     #contactpic {
-        background-color: @color-dark-list-selected-background !important;
+        background-color: var(--rc-color-dark-list-selected-background) !important;
     }
 
     .pgpkeyimport {
         div.key.revoked,
         div.key.disabled {
-            color: @color-dark-list-deleted;
+            color: var(--rc-color-dark-list-deleted);
         }
 
         li.uid::before {
