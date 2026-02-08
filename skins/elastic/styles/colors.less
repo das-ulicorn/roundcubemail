@@ -273,13 +273,13 @@
 @color-dark-border:         #4d6066;
 @color-dark-hint:           hsl(from @color-dark-font  h s calc(l - 20));
 /*^ less: #8ba3a7 */
-@color-dark-information:    shade(@color-main, 40%);
+@color-dark-information:    color-mix(in rgb, black 40%, @color-main);
 /*^ less: #217299 */
-@color-dark-success:        shade(@color-success, 40%);
+@color-dark-success:        color-mix(in rgb, black 40%, @color-success);
 /*^ less: #276e2c */
-@color-dark-warning:        shade(@color-warning, 40%);
+@color-dark-warning:        color-mix(in rgb, black 40%, @color-warning);
 /*^ less: #997f31 */
-@color-dark-error:          shade(@color-error, 40%);
+@color-dark-error:          color-mix(in rgb, black 40%, @color-error);
 /*^ less: #993331 */
 
 @color-dark-list-selected:              @color-main;
