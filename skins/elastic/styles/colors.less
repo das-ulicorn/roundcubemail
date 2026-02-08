@@ -93,7 +93,7 @@
 @color-list-selected-background:    color-mix(in rgb, white 90%, @color-main);
 /*^ less: #ebf9ff */
 @color-list-flagged:                @color-error;
-@color-list-deleted:                fadeout(@color-font, 50%);
+@color-list-deleted:                rgb(from @color-font r g b / calc( alpha - 0.5));
 /*^ less: rgba(44, 54, 58, 0.5) */
 @color-list-secondary:              @color-black-shade-text;
 @color-list-droptarget-background:  #ffffcc;
@@ -109,7 +109,7 @@
 @color-list-recent-badge-background: @color-main;
 
 @color-list-pagenav:                @color-black-shade-text;
-@color-list-icon:                   fadeout(@color-list-secondary, 25%);
+@color-list-icon:                   rgb(from @color-list-secondary r g b / calc( alpha - 0.25));
 /*^ less: rgba(115, 118, 119, 0.75); */
 @color-list-unread-status:          @color-warning;
 
@@ -125,7 +125,7 @@
 // Messages
 @color-message:                     @color-font;
 @color-message-border:              transparent;
-@color-message-background:          fadeout(@color-main, 95%);
+@color-message-background:          rgb(from @color-main  r g b / calc( alpha - 0.95));
 /*^ less: rgba(55, 190, 255, 0.05); */
 @color-message-text:                #fff;
 @color-message-link:                @color-main;
@@ -145,13 +145,13 @@
 @color-message-information-box:     @color-message;
 @color-message-success-box:         @color-message;
 @color-message-warning-box:         @color-message;
-@color-message-error-box-background:        fadeout(@color-message-error, 80%);
+@color-message-error-box-background:        rgb(from @color-message-error r g b / calc( alpha - 0.8));
 /*^ less: rgba(255, 85, 82, 0.2) */
-@color-message-information-box-background:  fadeout(@color-message-information, 80%);
+@color-message-information-box-background:  rgb(from @color-message-information r g b / calc( alpha - 0.8));
 /*^ less: rgba(55, 190, 255, 0.2) */
-@color-message-success-box-background:      fadeout(@color-message-success, 80%);
+@color-message-success-box-background:      rgb(from @color-message-success r g b / calc( alpha - 0.8));
 /*^ less: rgba(65, 184, 73, 0.2) */
-@color-message-warning-box-background:      fadeout(@color-message-warning, 80%);
+@color-message-warning-box-background:      rgb(from @color-message-warning r g b / calc( alpha - 0.8));
 /*^ less: rgba(255, 212, 82, 0.2) */
 
 
@@ -178,10 +178,10 @@
 @color-input:                       @color-font;
 @color-input-border:                #ced4da; // from Bootstrap's .form-control
 @color-input-border-focus:          @color-main;
-@color-input-border-focus-shadow:   fadeout(@color-main, 75);
+@color-input-border-focus-shadow:   rgb(from @color-main  r g b / calc( alpha - 0.75));
 /*^ less: rgba(55, 190, 255, 0.25) */
 @color-input-border-invalid:        @color-error;
-@color-input-border-invalid-shadow: fadeout(@color-error, 75);
+@color-input-border-invalid-shadow: rgb(from @color-error r g b / calc( alpha - 0.75));
 /*^ less: rgba(255, 85, 82, 0.25) */
 @color-input-addon-background:      @color-black-shade-bg;
 @color-recipient-input-border:      @color-input-border;
@@ -212,7 +212,7 @@
 @color-quota-value:                 @color-main;
 @color-quota-value-warning:         @color-error;
 
-@color-blockquote-background:       fadeout(@color-black-shade-bg, 50%);
+@color-blockquote-background:       rgb(from @color-black-shade-bg r g b / calc( alpha - 0.50));
 /*^ less: rgba(241, 243, 244, 0.5); */
 @color-blockquote-0:                hsl(from @color-main h s calc(l - 30));
 /*^ less: #008cd0 */
@@ -248,15 +248,15 @@
 
 
 // HTML editor
-@color-editor-disabled-mask:            fadeout(hsl(from @color-black h s calc(l + 85)), 10);
+@color-editor-disabled-mask:            rgb(from hsl(from @color-black h s calc(l + 85)) r g b / calc( alpha - 0.1));
 /*^ less: rgba(241, 243, 244, 0.9) */
 
 
 // Image tools
 @color-image-tools:                     #fff;
-@color-image-tools-background:          fadeout(@color-main, 60%);
+@color-image-tools-background:          rgb(from @color-main r g b / calc( alpha - 0.60));
 /*^ less: rgba(55, 190, 255, 0.4) */
-@color-image-tools-hover:               fadeout(@color-main, 50%);
+@color-image-tools-hover:               rgb(from @color-main r g b / calc( alpha - 0.50));
 /*^ less: rgba(55, 190, 255, 0.5) */
 
 

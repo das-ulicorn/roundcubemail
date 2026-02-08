@@ -152,7 +152,7 @@ html.dark-mode {
     }
 
     .iframe-loader {
-        background-color: fadeout(@color-dark-background, 10%);
+        background-color: rgb(from @color-dark-background  r g b / calc( alpha - 0.10));
 	/* less: rgba(33, 41, 44, 0.9); */
 
         .spinner-border {
@@ -550,7 +550,7 @@ html.dark-mode {
         background-color: @color-dark-list-selected-background;
 
         a.button {
-            background-color: fadeout(@color-dark-background, 75%);
+            background-color: rgb(from @color-dark-background  r g b / calc( alpha - 0.75));
 	    /* less: #21292c */
         }
     }
