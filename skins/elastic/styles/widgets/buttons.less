@@ -208,7 +208,7 @@ html.touch {
         background: @color-main;
         color: white;
         opacity: .95;
-        box-shadow: 0 0 5px 5px lighten(@color-main, 35%);
+        box-shadow: 0 0 5px 5px hsl(from @color-main h s calc(l + 35));
 	/* ^less: #eaf8ff */
         margin: 0 1rem 1rem 0;
 

@@ -244,7 +244,7 @@ html.dark-mode {
     }
 
     .menu.toolbar .dropbutton a.dropdown:hover {
-        background-color: lighten(@color-dark-list-selected-background, 5%);
+        background-color: hsl(from @color-dark-list-selected-background h s calc(l + 5));
 	/* less: #425358 */
     }
 
@@ -393,7 +393,7 @@ html.dark-mode {
         color: @color-dark-btn;
 
         &:hover:not(:disabled) {
-            background-color: lighten(@color-dark-btn-primary-background, 5%);
+            background-color: hsl(from @color-dark-btn-primary-background h s calc(l + 5));
 	    /* less: #007bb7 */
         }
     }
@@ -403,7 +403,7 @@ html.dark-mode {
         color: @color-dark-btn;
 
         &:hover:not(:disabled) {
-            background-color: lighten(@color-dark-btn-secondary-background, 5%);
+            background-color: hsl(from @color-dark-btn-secondary-background h s calc(l + 5));
 	    /* less: #586e75 */
         }
     }
@@ -413,7 +413,7 @@ html.dark-mode {
         color: @color-dark-btn;
 
         &:hover:not(:disabled) {
-            background-color: lighten(@color-dark-btn-danger-background, 5%);
+            background-color: hsl(from @color-dark-btn-danger-background h s calc(l + 5));
 	    /* less: #ac3937 */
         }
     }
@@ -662,7 +662,7 @@ html.dark-mode {
         .tox-button--naked {
             &:focus:not(:disabled),
             &.tox-button--icon:hover:not(:disabled) {
-                color: lighten(@color-dark-font, 5%);
+                color: hsl(from @color-dark-font h s calc(l + 5));
 		/* less: #b7c5c8 */
                 background-color: @color-dark-input-addon-background-focus;
                 border-color: transparent;
@@ -734,7 +734,7 @@ html.dark-mode {
             }
 
             &:hover:not(:disabled) {
-                background-color: lighten(@color-dark-btn-primary-background, 5%);
+                background-color: hsl(from @color-dark-btn-primary-background h s calc(l + 5));
 		/* less: #007bb7 */
             }
 
@@ -747,7 +747,7 @@ html.dark-mode {
                 }
 
                 &:hover:not(:disabled) {
-                    background-color: lighten(@color-dark-btn-secondary-background, 5%);
+                    background-color: hsl(from @color-dark-btn-secondary-background h s calc(l + 5%);
                 	/* less: #586e75 */
 		}
 
@@ -953,7 +953,7 @@ html.dark-mode {
         }
 
         .ui-datepicker-days-cell-over a {
-            background-color: lighten(@color-dark-list-selected-background, 10%);
+            background-color: hsl(from @color-dark-list-selected-background h s calc(l +  10));
 	    /* less: #4d6066 */
         }
     }
