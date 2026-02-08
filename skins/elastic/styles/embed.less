@@ -74,7 +74,7 @@
         background: @color-btn-primary-background;
 
         &:focus {
-            box-shadow: 0 0 0 .2rem fade(@color-btn-primary-background, 50%);
+            box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 50%);
 	    /* less: rgba(55, 190, 255, 0.50) */
         }
 
@@ -90,7 +90,7 @@
 	    /* less: #00abfe */
             border-color: hsl(from @color-btn-primary-background h s calc(l -  13));
 	    /* less: #00a4f4 */
-            box-shadow: 0 0 0 .2rem fade(@color-btn-primary-background, 53%);
+            box-shadow: 0 0 0 .2rem rgb(@color-btn-primary-background, 53%);
 	    /* less: rgba(55, 190, 255, 0.53) */
         }
     }
