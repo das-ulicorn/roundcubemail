@@ -34,7 +34,7 @@
 @color-success:             #41b849;
 @color-warning:             #ffd452;
 
-@color-black-shade-text:    tint(@color-black, 40%);
+@color-black-shade-text:    color-mix(in rgb, white 40%, @color-black);
 /*^ less: #737677 */
 @color-black-shade-border:  hsl(from @color-black  h s calc(l + 75));
 /*^ less: #d4dbde */
@@ -90,7 +90,7 @@
 // Listings
 @color-list:                        @color-font;
 @color-list-selected:               @color-font;
-@color-list-selected-background:    tint(@color-main, 90%);
+@color-list-selected-background:    color-mix(in rgb, white 90%, @color-main);
 /*^ less: #ebf9ff */
 @color-list-flagged:                @color-error;
 @color-list-deleted:                fadeout(@color-font, 50%);
@@ -134,7 +134,7 @@
 @color-message-success:             @color-success;
 @color-message-warning:             @color-warning;
 @color-message-error:               @color-error;
-@color-message-loading:             tint(@color-font, 30%);
+@color-message-loading:             color-mix(in rgb, white 30%, @color-font);
 /*^ less: #6b7275 */
 @color-message-information-text:    @color-message-text;
 @color-message-success-text:        @color-message-text;
