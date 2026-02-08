@@ -156,9 +156,9 @@ html.dark-mode {
 	/* less: rgba(33, 41, 44, 0.9); */
 
         .spinner-border {
-            color: darken(@color-dark-font, 25%);
+            color: hsl(from @color-dark-font h s calc(l - 25));
 	    /* less: #7d989c */
-            border-color: currentColor darken(@color-dark-font, 50%) currentColor currentColor;
+            border-color: currentColor hsl(from @color-dark-font h s calc(l - 50)) currentColor currentColor;
 	    /* less: #425457 */
         }
     }
@@ -576,7 +576,7 @@ html.dark-mode {
     }
 
     .CodeMirror-gutters {
-        background-color: darken(@color-dark-list-selected-background, 10%);
+        background-color: hsl(from @color-dark-list-selected-background h s calc(l - 10));
 	/* less: #212a2c */
         border: 0;
     }
@@ -1002,7 +1002,7 @@ html.dark-mode {
 
         .menu li.separator {
             background-color: transparent;
-            color: darken(@color-dark-font, 20%);
+            color: hsl(from @color-dark-font h s calc(l - 20));
 	    /* less: #8ba3a7 */
         }
 

@@ -21,13 +21,13 @@
 
 
 @color-main:                #37beff;
-@color-main-dark:           darken(@color-main, 35%);
+@color-main-dark:           hsl(from @color-main h s calc(l - 35));
 /* ^ less: #005984 */
 @color-black:               #161b1d;
 @color-font:                lighten(@color-black, 10%);
 /* ^ less: #2c363a */
 @color-link:                #00acff;
-@color-link-hover:          darken(@color-link, 10%);
+@color-link-hover:          hsl(from @color-link h s calc(l - 10));
 /* ^ less: #008acc */
 @color-border:              #ddd;
 @color-error:               #ff5552;
@@ -77,7 +77,7 @@
 
 // Toolbar
 @color-toolbar-button:                  @color-font;
-@color-toolbar-button-background-hover: darken(@color-layout-header-background, 3%);
+@color-toolbar-button-background-hover: hsl(from @color-layout-header-background h s calc(l - 3));
 /*^ less: #ececec */
 
 @color-searchbar-background:            #fbfbfb;
@@ -103,7 +103,7 @@
 @color-list-border:                 @color-black-shade-bg;
 @color-list-badge:                  #fff;
 @color-list-badge-background:       @color-main;
-@color-list-recent:                 darken(@color-main, 20%);
+@color-list-recent:                 hsl(from @color-main h s calc(l - 20));
 /*^ less: #008cd0 */
 @color-list-recent-badge:           #fff;
 @color-list-recent-badge-background: @color-main;
@@ -214,11 +214,11 @@
 
 @color-blockquote-background:       fadeout(@color-black-shade-bg, 50%);
 /*^ less: rgba(241, 243, 244, 0.5); */
-@color-blockquote-0:                darken(@color-main, 30%);
+@color-blockquote-0:                hsl(from @color-main h s calc(l - 30));
 /*^ less: #008cd0 */
-@color-blockquote-1:                darken(@color-success, 25%);
+@color-blockquote-1:                hsl(from @color-success h s calc(l -  25));
 /*^ less: #205a24 */
-@color-blockquote-2:                darken(@color-error, 20%);
+@color-blockquote-2:                hsl(from @color-error h s calc(l - 20));
 /*^ less: #eb0400 */
 @color-blockquote-0-border:         @color-blockquote-0;
 @color-blockquote-1-border:         @color-blockquote-1;
@@ -266,12 +266,12 @@
 
 
 // Dark mode colors
-@color-dark-main:           darken(@color-main, 30%);
+@color-dark-main:           hsl(from @color-main h s calc(l - 30));
 /*^ less: #006a9d */
 @color-dark-background:     #21292c;
 @color-dark-font:           #c5d1d3;
 @color-dark-border:         #4d6066;
-@color-dark-hint:           darken(@color-dark-font, 20%);
+@color-dark-hint:           hsl(from @color-dark-font  h s calc(l - 20));
 /*^ less: #8ba3a7 */
 @color-dark-information:    shade(@color-main, 40%);
 /*^ less: #217299 */
@@ -287,7 +287,7 @@
 @color-dark-list-badge:                 lighten(@color-dark-font, 10%);
 /*^ less: #e2e8e9 */
 @color-dark-list-badge-background:      @color-dark-border;
-@color-dark-list-deleted:               darken(@color-dark-hint, 15%);
+@color-dark-list-deleted:               hsl(from @color-dark-hint  h s calc(l - 15));
 /*^ less: #637e83 */
 @color-dark-list-droptarget-background: #4d4d00;
 @color-dark-list-border:                #2c373a;
@@ -325,7 +325,7 @@
 @color-dark-message-loading:            lighten(@color-dark-background, 10%);
 /*^ less: #374449 */
 
-@color-dark-scrollbar-thumb:            darken(@color-main, 25%);
+@color-dark-scrollbar-thumb:            hsl(from @color-main h s calc(l - 25));
 /*^ less: #007bb7 */
 @color-dark-scrollbar-track:            @color-dark-border;
 

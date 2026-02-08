@@ -86,7 +86,7 @@
                 }
 
                 &:hover {
-                    background-color: darken(@color-toolbar-button-background-hover, 5%);
+                    background-color: hsl(from @color-toolbar-button-background-hover  h s calc(l - 5));
 		    /* less: #dfdfdf */
                 }
             }
