@@ -81,10 +81,10 @@ input {
 }
 
 a {
-    color: @color-link;
+    color: var(--rc-color-link);
 
     &:hover {
-        color: @color-link-hover;
+        color: var(--rc-color-link-hover);
     }
 
     &.disabled {
@@ -135,15 +135,15 @@ html when not (@scrollbar-width = unset) {
 }
 
 html {
-    scrollbar-color: @color-scrollbar-thumb @color-scrollbar-track;
+    scrollbar-color: var(--rc-color-scrollbar-thumb) var(--rc-color-scrollbar-track);
 
     &:not(.touch) {
         ::-webkit-scrollbar-track {
-            background-color: @color-scrollbar-track;
+            background-color: var(--rc-color-scrollbar-track);
         }
 
         ::-webkit-scrollbar-thumb {
-            background-color: @color-scrollbar-thumb;
+            background-color: var(--rc-color-scrollbar-thumb);
         }
     }
 }

@@ -75,12 +75,12 @@
 
 #login-footer {
     flex: 1;
-    color: @color-black-shade-text;
+    color: var(--rc-color-black-shade-text);
 
     & > div {
         margin-top: 1rem;
         padding: 1rem;
-        background: @color-black-shade-bg;
+        background: var(--rc-color-black-shade-bg);
         border-radius: .3rem;
     }
 }
@@ -119,7 +119,7 @@ body.task-error-login #layout {
     display:table-cell;
     vertical-align:middle;
     text-align: center;
-    background-color: @color-image-upload-background;
+    background-color: var(--rc-color-image-upload-background);
 
     img {
         max-width: @layout-contact-icon-width;
@@ -140,7 +140,7 @@ body.task-error-login #layout {
 
     &.readonly {
         .source.row {
-            color: @color-form-hint;
+            color: var(--rc-color-form-hint);
             font-size: 90%;
             margin-bottom: .25rem;
         }
@@ -162,7 +162,7 @@ body.task-error-login #layout {
             float: none;
             content: @fa-var-flag;
             font-size: 1em;
-            color: @color-error;
+            color: var(--rc-color-error);
         }
 
         a.extwin {
@@ -193,7 +193,7 @@ body.task-error-login #layout {
             width: @mail-header-photo-height;
             height: @mail-header-photo-height;
             object-fit: cover;
-            background: @color-image-upload-background;
+            background: var(--rc-color-image-upload-background);
         }
     }
 
@@ -224,7 +224,7 @@ body.task-error-login #layout {
 
         .header-title {
             white-space: nowrap;
-            color: @color-black-shade-text;
+            color: var(--rc-color-black-shade-text);
             font-weight: bold;
             padding-right: 1rem;
             vertical-align: top;
@@ -277,12 +277,12 @@ body.task-error-login #layout {
 .message-partheaders {
     padding: .25rem .5rem;
     margin: .5rem 0 -.5rem 0;
-    border-top: 1px solid @color-messagepart-border;
-    background-color: @color-messagepart-background;
+    border-top: 1px solid var(--rc-color-messagepart-border);
+    background-color: var(--rc-color-messagepart-background);
 
     table.headers-table {
         font-size: 90%;
-        color: @color-mail-headers;
+        color: var(--rc-color-mail-headers);
 
         .header-title {
             .overflow-ellipsis();
@@ -326,7 +326,7 @@ body.task-error-login #layout {
     position: relative;
 
     &:not(:first-child) {
-        border-top: 1px solid @color-messagepart-border;
+        border-top: 1px solid var(--rc-color-messagepart-border);
         margin-top: .5rem;
     }
 
@@ -343,22 +343,22 @@ body.task-error-login #layout {
 
     blockquote {
         .overflow-ellipsis();
-        color: @color-blockquote-0;
-        border-left: 2px solid @color-blockquote-0-border;
-        border-right: 2px solid @color-blockquote-0-border;
-        background-color: @color-blockquote-background;
+        color: var(--rc-color-blockquote-0);
+        border-left: 2px solid var(--rc-color-blockquote-0-border);
+        border-right: 2px solid var(--rc-color-blockquote-0-border);
+        background-color: var(--rc-color-blockquote-background);
         margin: 2px 0;
         padding: 0 .4em;
 
         blockquote {
-            color: @color-blockquote-1;
-            border-left: 2px solid @color-blockquote-1-border;
-            border-right: 2px solid @color-blockquote-1-border;
+            color: var(--rc-color-blockquote-1);
+            border-left: 2px solid var(--rc-color-blockquote-1-border);
+            border-right: 2px solid var(--rc-color-blockquote-1-border);
 
             blockquote {
-                color: @color-blockquote-2;
-                border-left: 2px solid @color-blockquote-2-border;
-                border-right: 2px solid @color-blockquote-2-border;
+                color: var(--rc-color-blockquote-2);
+                border-left: 2px solid var(--rc-color-blockquote-2-border);
+                border-right: 2px solid var(--rc-color-blockquote-2-border);
             }
         }
 
@@ -370,9 +370,9 @@ body.task-error-login #layout {
             padding: .2rem .25rem .2rem .5rem;
             font-size: 90%;
             text-align: center;
-            color: @color-black-shade-text;
-            background: @color-black-shade-bg;
-            border: 1px solid @color-black-shade-border;
+            color: var(--rc-color-black-shade-text);
+            background: var(--rc-color-black-shade-bg);
+            border: 1px solid var(--rc-color-black-shade-border);
             border-radius: .3rem;
             line-height: 1;
             .font-family(); // don't inherit monospace font
@@ -400,7 +400,7 @@ body.task-error-login #layout {
 
 .message-part {
     span.sig {
-        color: @color-mail-signature;
+        color: var(--rc-color-mail-signature);
     }
 
     div.pre {
@@ -439,7 +439,7 @@ body.task-error-login #layout {
     float: none;
     display: inline-block;
     content: @fa-var-exclamation-triangle;
-    color: @color-message-warning;
+    color: var(--rc-color-message-warning);
 }
 
 #composestatusbar {
