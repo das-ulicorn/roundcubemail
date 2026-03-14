@@ -4,6 +4,14 @@ This file includes only changes we consider noteworthy for users, admins and plu
 
 ## Unreleased
 
+- Password: Add nt-binary hashing method (#10096)
+- Fix URL matching for domain names with port numbers (#10105)
+- Fix PHP fatal error when using IMAP cache (#10102)
+- Fix Postgres connection using IPv6 address (#10104)
+- Fix bug where `rel=stylesheet` part of a `<link>` could get removed
+
+## 1.7-rc4
+
 - Ensure correct file permissions when building a release.
 - Installer: Fix broken link to download the created configuration file (#10092)
 
