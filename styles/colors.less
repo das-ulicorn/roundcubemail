@@ -21,13 +21,13 @@
 
 
 @color-main:                #37beff;
-@color-main-dark:           hsl(from @color-main h s calc(l - 35));
+@color-main-dark:           ~"hsl(from @color-main h s calc(l - 35))";
 /* ^ less: #005984 */
 @color-black:               #161b1d;
-@color-font:                hsl(from @color-black h s calc(l + 10));
+@color-font:                ~"hsl(from @color-black h s calc(l + 10))";
 /* ^ less: #2c363a */
 @color-link:                #00acff;
-@color-link-hover:          hsl(from @color-link h s calc(l - 10));
+@color-link-hover:          ~"hsl(from @color-link h s calc(l - 10))";
 /* ^ less: #008acc */
 @color-border:              #ddd;
 @color-error:               #ff5552;
@@ -36,9 +36,9 @@
 
 @color-black-shade-text:    color-mix(in rgb, white 40%, @color-black);
 /*^ less: #737677 */
-@color-black-shade-border:  hsl(from @color-black  h s calc(l + 75));
+@color-black-shade-border:  ~"hsl(from @color-black  h s calc(l + 75))";
 /*^ less: #d4dbde */
-@color-black-shade-bg:      hsl(from @color-black h s calc(l + 85));
+@color-black-shade-bg:      ~"hsl(from @color-black h s calc(l + 85))";
 /*^ less: #f1f3f4 */
 
 
@@ -60,7 +60,7 @@
 @color-taskmenu-button-selected:                @color-taskmenu-button;
 @color-taskmenu-button-action:                  @color-main;
 
-@color-taskmenu-button-selected-background:     hsl(from @color-taskmenu-background h s calc(l + 10));
+@color-taskmenu-button-selected-background:     ~"hsl(from @color-taskmenu-background h s calc(l + 10))";
 /*^ less: #45555c */
 @color-taskmenu-button-action-background:       transparent;
 
@@ -68,7 +68,7 @@
 @color-taskmenu-button-selected-hover:          #fff;
 @color-taskmenu-button-action-hover:            @color-main;
 
-@color-taskmenu-button-background-hover:        hsl(from @color-taskmenu-background h s calc(l + 10));
+@color-taskmenu-button-background-hover:        ~"hsl(from @color-taskmenu-background h s calc(l + 10))";
 /*^ less: #45555c */
 @color-taskmenu-button-action-background-hover: @color-taskmenu-button-background-hover;
 @color-taskmenu-button-logout:                  @color-error;
@@ -77,7 +77,7 @@
 
 // Toolbar
 @color-toolbar-button:                  @color-font;
-@color-toolbar-button-background-hover: hsl(from @color-layout-header-background h s calc(l - 3));
+@color-toolbar-button-background-hover: ~"hsl(from @color-layout-header-background h s calc(l - 3))";
 /*^ less: #ececec */
 
 @color-searchbar-background:            #fbfbfb;
@@ -93,23 +93,23 @@
 @color-list-selected-background:    color-mix(in rgb, white 90%, @color-main);
 /*^ less: #ebf9ff */
 @color-list-flagged:                @color-error;
-@color-list-deleted:                rgb(from @color-font r g b / calc( alpha - 0.5));
+@color-list-deleted:                ~"rgb(from @color-font r g b / calc( alpha - 0.5))";
 /*^ less: rgba(44, 54, 58, 0.5) */
 @color-list-secondary:              @color-black-shade-text;
 @color-list-droptarget-background:  #ffffcc;
-@color-list-focus-indicator:        hsl(from @color-main h s calc(l + 20));
+@color-list-focus-indicator:        ~"hsl(from @color-main h s calc(l + 20))";
 /*^ less: #9ddfff */
 
 @color-list-border:                 @color-black-shade-bg;
 @color-list-badge:                  #fff;
 @color-list-badge-background:       @color-main;
-@color-list-recent:                 hsl(from @color-main h s calc(l - 20));
+@color-list-recent:                 ~"hsl(from @color-main h s calc(l - 20))";
 /*^ less: #008cd0 */
 @color-list-recent-badge:           #fff;
 @color-list-recent-badge-background: @color-main;
 
 @color-list-pagenav:                @color-black-shade-text;
-@color-list-icon:                   rgb(from @color-list-secondary r g b / calc( alpha - 0.25));
+@color-list-icon:                   ~"rgb(from @color-list-secondary r g b / calc( alpha - 0.25))";
 /*^ less: rgba(115, 118, 119, 0.75); */
 @color-list-unread-status:          @color-warning;
 
@@ -125,7 +125,7 @@
 // Messages
 @color-message:                     @color-font;
 @color-message-border:              transparent;
-@color-message-background:          rgb(from @color-main  r g b / calc( alpha - 0.95));
+@color-message-background:          ~"rgb(from @color-main  r g b / calc( alpha - 0.95))";
 /*^ less: rgba(55, 190, 255, 0.05); */
 @color-message-text:                #fff;
 @color-message-link:                @color-main;
@@ -145,13 +145,13 @@
 @color-message-information-box:     @color-message;
 @color-message-success-box:         @color-message;
 @color-message-warning-box:         @color-message;
-@color-message-error-box-background:        rgb(from @color-message-error r g b / calc( alpha - 0.8));
+@color-message-error-box-background:        ~"rgb(from @color-message-error r g b / calc( alpha - 0.8))";
 /*^ less: rgba(255, 85, 82, 0.2) */
-@color-message-information-box-background:  rgb(from @color-message-information r g b / calc( alpha - 0.8));
+@color-message-information-box-background:  ~"rgb(from @color-message-information r g b / calc( alpha - 0.8))";
 /*^ less: rgba(55, 190, 255, 0.2) */
-@color-message-success-box-background:      rgb(from @color-message-success r g b / calc( alpha - 0.8));
+@color-message-success-box-background:      ~"rgb(from @color-message-success r g b / calc( alpha - 0.8))";
 /*^ less: rgba(65, 184, 73, 0.2) */
-@color-message-warning-box-background:      rgb(from @color-message-warning r g b / calc( alpha - 0.8));
+@color-message-warning-box-background:      ~"rgb(from @color-message-warning r g b / calc( alpha - 0.8))";
 /*^ less: rgba(255, 212, 82, 0.2) */
 
 
@@ -178,10 +178,10 @@
 @color-input:                       @color-font;
 @color-input-border:                #ced4da; // from Bootstrap's .form-control
 @color-input-border-focus:          @color-main;
-@color-input-border-focus-shadow:   rgb(from @color-main  r g b / calc( alpha - 0.75));
+@color-input-border-focus-shadow:   ~"rgb(from @color-main  r g b / calc( alpha - 0.75))";
 /*^ less: rgba(55, 190, 255, 0.25) */
 @color-input-border-invalid:        @color-error;
-@color-input-border-invalid-shadow: rgb(from @color-error r g b / calc( alpha - 0.75));
+@color-input-border-invalid-shadow: ~"rgb(from @color-error r g b / calc( alpha - 0.75))";
 /*^ less: rgba(255, 85, 82, 0.25) */
 @color-input-addon-background:      @color-black-shade-bg;
 @color-recipient-input-border:      @color-input-border;
@@ -190,7 +190,7 @@
 
 @color-checkbox:                    @color-main;
 @color-checkbox-checked:            @color-main;
-@color-checkbox-checked-disabled:   hsl(from @color-main h s calc(l + 15));
+@color-checkbox-checked-disabled:   ~"hsl(from @color-main h s calc(l + 15))";
 /*^ less: #84d7ff */
 @color-checkbox-focus:              @color-input-border-focus;
 @color-checkbox-focus-shadow:       @color-input-border-focus-shadow;
@@ -200,7 +200,7 @@
 @color-image-upload-background:     #f4f4f4;
 
 @color-btn-secondary:               #fff;
-@color-btn-secondary-background:    hsl(from @color-black h s calc(l + 50));
+@color-btn-secondary-background:    ~"hsl(from @color-black h s calc(l + 50))";
 /*^ less: #8b9fa7 */
 @color-btn-primary:                 #fff;
 @color-btn-primary-background:      @color-main;
@@ -212,13 +212,13 @@
 @color-quota-value:                 @color-main;
 @color-quota-value-warning:         @color-error;
 
-@color-blockquote-background:       rgb(from @color-black-shade-bg r g b / calc( alpha - 0.50));
+@color-blockquote-background:       ~"rgb(from @color-black-shade-bg r g b / calc( alpha - 0.50))";
 /*^ less: rgba(241, 243, 244, 0.5); */
-@color-blockquote-0:                hsl(from @color-main h s calc(l - 30));
+@color-blockquote-0:                ~"hsl(from @color-main h s calc(l - 30))";
 /*^ less: #008cd0 */
-@color-blockquote-1:                hsl(from @color-success h s calc(l -  25));
+@color-blockquote-1:                ~"hsl(from @color-success h s calc(l -  25))";
 /*^ less: #205a24 */
-@color-blockquote-2:                hsl(from @color-error h s calc(l - 20));
+@color-blockquote-2:                ~"hsl(from @color-error h s calc(l - 20))";
 /*^ less: #eb0400 */
 @color-blockquote-0-border:         @color-blockquote-0;
 @color-blockquote-1-border:         @color-blockquote-1;
@@ -241,22 +241,22 @@
 @color-datepicker-border:               @color-layout-border;
 @color-datepicker-font:                 @color-font;
 @color-datepicker-highlight:            @color-main;
-@color-datepicker-highlight-background: hsl(from @color-main h s calc(l + 30));
+@color-datepicker-highlight-background: ~"hsl(from @color-main h s calc(l + 30))";
 /*^ less: #d0f0ff */
 @color-datepicker-active:               #fff;
 @color-datepicker-active-background:    @color-main;
 
 
 // HTML editor
-@color-editor-disabled-mask:            rgb(from hsl(from @color-black h s calc(l + 85)) r g b / calc( alpha - 0.1));
+@color-editor-disabled-mask:            ~"rgb(from hsl(from @color-black h s calc(l + 85)) r g b / calc( alpha - 0.1))";
 /*^ less: rgba(241, 243, 244, 0.9) */
 
 
 // Image tools
 @color-image-tools:                     #fff;
-@color-image-tools-background:          rgb(from @color-main r g b / calc( alpha - 0.60));
+@color-image-tools-background:          ~"rgb(from @color-main r g b / calc( alpha - 0.60))";
 /*^ less: rgba(55, 190, 255, 0.4) */
-@color-image-tools-hover:               rgb(from @color-main r g b / calc( alpha - 0.50));
+@color-image-tools-hover:               ~"rgb(from @color-main r g b / calc( alpha - 0.50))";
 /*^ less: rgba(55, 190, 255, 0.5) */
 
 
@@ -266,12 +266,12 @@
 
 
 // Dark mode colors
-@color-dark-main:           hsl(from @color-main h s calc(l - 30));
+@color-dark-main:           ~"hsl(from @color-main h s calc(l - 30))";
 /*^ less: #006a9d */
 @color-dark-background:     #21292c;
 @color-dark-font:           #c5d1d3;
 @color-dark-border:         #4d6066;
-@color-dark-hint:           hsl(from @color-dark-font  h s calc(l - 20));
+@color-dark-hint:           ~"hsl(from @color-dark-font  h s calc(l - 20))";
 /*^ less: #8ba3a7 */
 @color-dark-information:    color-mix(in rgb, black 40%, @color-main);
 /*^ less: #217299 */
@@ -284,10 +284,10 @@
 
 @color-dark-list-selected:              @color-main;
 @color-dark-list-selected-background:   #374549;
-@color-dark-list-badge:                 hsl(from @color-dark-font h s calc(l + 10));
+@color-dark-list-badge:                 ~"hsl(from @color-dark-font h s calc(l + 10))";
 /*^ less: #e2e8e9 */
 @color-dark-list-badge-background:      @color-dark-border;
-@color-dark-list-deleted:               hsl(from @color-dark-hint  h s calc(l - 15));
+@color-dark-list-deleted:               ~"hsl(from @color-dark-hint  h s calc(l - 15))";
 /*^ less: #637e83 */
 @color-dark-list-droptarget-background: #4d4d00;
 @color-dark-list-border:                #2c373a;
@@ -297,15 +297,15 @@
 @color-dark-input-background:           @color-dark-background;
 @color-dark-input-focus:                #e2e7e9;
 @color-dark-input-border-focus:         @color-main;
-@color-dark-input-background-focus:     hsl(from @color-dark-background h s calc(l + 5));
+@color-dark-input-background-focus:     ~"hsl(from @color-dark-background h s calc(l + 5))";
 /*^ less: #2c373b */
 @color-dark-input-addon-background:     #374549;
-@color-dark-input-addon-background-focus: hsl(from @color-dark-list-selected-background h s calc(l + 15));
+@color-dark-input-addon-background-focus: ~"hsl(from @color-dark-list-selected-background h s calc(l + 15))";
 /*^ less: #586e75 */
 @color-dark-checkbox:                   @color-dark-border;
 @color-dark-checkbox-checked:           @color-dark-main;
 
-@color-dark-btn:                        hsl(from @color-dark-font h s calc(l + 10));
+@color-dark-btn:                        ~"hsl(from @color-dark-font h s calc(l + 10))";
 /*^ less: #e2e8e9 */
 @color-dark-btn-primary-background:     @color-dark-main;
 @color-dark-btn-secondary-background:   @color-dark-border;
@@ -315,25 +315,25 @@
 /*^ less: rgba(0, 0, 0, 0.7) */
 
 @color-dark-popover-background:         #161b1d;
-@color-dark-popover-border:             hsl(from #161b1d h s calc(l + 50));
+@color-dark-popover-border:             ~"hsl(from #161b1d h s calc(l + 50))";
 /*^ less: #8b9fa7 */
 
 @color-dark-message-information:        @color-dark-information;
 @color-dark-message-success:            @color-dark-success;
 @color-dark-message-warning:            @color-dark-warning;
 @color-dark-message-error:              @color-dark-error;
-@color-dark-message-loading:            hsl(from @color-dark-background h s calc(l + 10));
+@color-dark-message-loading:            ~"hsl(from @color-dark-background h s calc(l + 10))";
 /*^ less: #374449 */
 
-@color-dark-scrollbar-thumb:            hsl(from @color-main h s calc(l - 25));
+@color-dark-scrollbar-thumb:            ~"hsl(from @color-main h s calc(l - 25))";
 /*^ less: #007bb7 */
 @color-dark-scrollbar-track:            @color-dark-border;
 
-@color-dark-blockquote-0:               hsl(from @color-main h s calc(l + 10));
+@color-dark-blockquote-0:               ~"hsl(from @color-main h s calc(l + 10))";
 /*^ less: #6acfff */
-@color-dark-blockquote-1:               hsl(from @color-success h s calc(l + 10));
+@color-dark-blockquote-1:               ~"hsl(from @color-success h s calc(l + 10))";
 /*^ less: #64c86b */
-@color-dark-blockquote-2:               hsl(from @color-error h s calc(l + 10));
+@color-dark-blockquote-2:               ~"hsl(from @color-error h s calc(l + 10))";
 /*^ less: #ff8785 */
 @color-dark-blockquote-0-border:        @color-dark-blockquote-0;
 @color-dark-blockquote-1-border:        @color-dark-blockquote-1;

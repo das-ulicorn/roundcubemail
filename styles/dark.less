@@ -156,9 +156,9 @@ html.dark-mode {
 	/* less: rgba(33, 41, 44, 0.9); */
 
         .spinner-border {
-            color: hsl(from var(--rc-color-dark-font) h s calc(l - 25));
+            color: ~"hsl(from var(--rc-color-dark-font) h s calc(l - 25))";
 	    /* less: #7d989c */
-            border-color: currentColor hsl(from var(--rc-color-dark-font) h s calc(l - 50)) currentColor currentColor;
+            border-color: currentColor ~"hsl(from var(--rc-color-dark-font) h s calc(l - 50))" currentColor currentColor;
 	    /* less: #425457 */
         }
     }
@@ -244,7 +244,7 @@ html.dark-mode {
     }
 
     .menu.toolbar .dropbutton a.dropdown:hover {
-        background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l + 5));
+        background-color: ~"hsl(from var(--rc-color-dark-list-selected-background) h s calc(l + 5))";
 	/* less: #425358 */
     }
 
@@ -393,7 +393,7 @@ html.dark-mode {
         color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5));
+            background-color: ~"hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5))";
 	    /* less: #007bb7 */
         }
     }
@@ -403,7 +403,7 @@ html.dark-mode {
         color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5));
+            background-color: ~"hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5))";
 	    /* less: #586e75 */
         }
     }
@@ -413,7 +413,7 @@ html.dark-mode {
         color: var(--rc-color-dark-btn);
 
         &:hover:not(:disabled) {
-            background-color: hsl(from var(--rc-color-dark-btn-danger-background) h s calc(l + 5));
+            background-color: ~"hsl(from var(--rc-color-dark-btn-danger-background) h s calc(l + 5))";
 	    /* less: #ac3937 */
         }
     }
@@ -576,7 +576,7 @@ html.dark-mode {
     }
 
     .CodeMirror-gutters {
-        background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l - 10));
+        background-color: ~"hsl(from var(--rc-color-dark-list-selected-background) h s calc(l - 10))";
 	/* less: #212a2c */
         border: 0;
     }
@@ -662,7 +662,7 @@ html.dark-mode {
         .tox-button--naked {
             &:focus:not(:disabled),
             &.tox-button--icon:hover:not(:disabled) {
-                color: hsl(from var(--rc-color-dark-font) h s calc(l + 5));
+                color: ~"hsl(from var(--rc-color-dark-font) h s calc(l + 5))";
 		/* less: #b7c5c8 */
                 background-color: var(--rc-color-dark-input-addon-background-focus);
                 border-color: transparent;
@@ -734,7 +734,7 @@ html.dark-mode {
             }
 
             &:hover:not(:disabled) {
-                background-color: hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5));
+                background-color: ~"hsl(from var(--rc-color-dark-btn-primary-background) h s calc(l + 5))";
 		/* less: #007bb7 */
             }
 
@@ -747,7 +747,7 @@ html.dark-mode {
                 }
 
                 &:hover:not(:disabled) {
-                    background-color: hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5%);
+                    background-color: ~"hsl(from var(--rc-color-dark-btn-secondary-background) h s calc(l + 5%)";
                 	/* less: #586e75 */
 		}
 
@@ -953,7 +953,7 @@ html.dark-mode {
         }
 
         .ui-datepicker-days-cell-over a {
-            background-color: hsl(from var(--rc-color-dark-list-selected-background) h s calc(l +  10));
+            background-color: ~"hsl(from var(--rc-color-dark-list-selected-background) h s calc(l +  10))";
 	    /* less: #4d6066 */
         }
     }
@@ -1002,7 +1002,7 @@ html.dark-mode {
 
         .menu li.separator {
             background-color: transparent;
-            color: hsl(from var(--rc-color-dark-font) h s calc(l - 20));
+            color: ~"hsl(from var(--rc-color-dark-font) h s calc(l - 20))";
 	    /* less: #8ba3a7 */
         }
 
